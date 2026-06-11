@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MINDLOCK</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/static/game.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div class="hud-title">M<span class="ai">I</span>NDLOCK</div>
+      <div class="hud-stats">
+        <span id="hud-room">—</span>
+        <span class="sep">·</span>
+        <span>depth <b id="hud-depth">0</b></span>
+        <span class="sep">·</span>
+        <span>reputation <b id="hud-rep">0</b></span>
+        <span class="sep">·</span>
+        <button id="snd" title="Sound on/off">♪</button>
+      </div>
+    </header>
+
+    <main id="stage">
+      <section id="world">
+        <canvas id="screen" width="640" height="448"></canvas>
+        <div id="prompt" class="hidden"></div>
+        <!-- a black, light-framed remark the protagonist can mutter (triggered on demand) -->
+        <div id="bark" class="hidden"></div>
+        <!-- the flip moment: REFUSE → HELP / HE BREAKS, stamped across the canvas -->
+        <div id="flip-banner" class="hidden"></div>
+        <div id="log"></div>
+
+        <!-- "Open the skull": the full per-region reasoning, summoned with /brain in the dialogue. -->
+        <div id="brain-panel" class="hidden"></div>
+
+        <!-- layout editor: searchable object picker (open with 'o' while editing) -->
+        <div id="objpicker" class="hidden">
+          <div class="op-head"><span>OBJECTS</span>
+            <input id="op-search" type="text" placeholder="search…  (Esc closes)" autocomplete="off" />
+          </div>
+          <div id="op-grid"></div>
+        </div>
+
+        <!-- pause menu (Esc): save here, walk back to the title -->
+        <div id="pausemenu" class="hidden">
+          <div class="pm-card">
+            <div class="pm-title">PAUSED</div>
+            <button id="pm-continue">Continue <span class="pm-k">Esc</span></button>
+            <button id="pm-save" class="hidden">Save level <span class="pm-k">S</span></button>
+            <button id="pm-exit">Exit to menu</button>
+          </div>
+        </div>
+
+        <!-- layout editor: the legend (toggle with 'h') -->
+        <div id="ed-help" class="hidden">
+          <div class="edh-title">LEVEL EDITOR</div>
+          <div class="edh-grid">
+            <b>mouse drag</b><span>move a prop or a mind</span>
+            <b>O</b><span>object picker — picking ARMS the brush</span>
+            <b>click empty</b><span>armed: place the prop · else: deselect</span>
+            <b>Esc</b><span>drop the brush / deselect</span>
+            <b>[ ]</b><span>cycle brush prop (arms it)</span>
+            <b>Enter</b><span>edit the selected mind (prompts)</span>
+            <b>, .</b><span>Z-order: behind / in front</span>
+            <b>Z</b><span>layer: object / wall / floor</span>
+            <b>T</b><span>cycle room theme (walls+floor+mood)</span>
+            <b>W</b><span>cycle wall material only</span>
+            <b>F</b><span>cycle floor material only</span>
+            <b>arrows</b><span>nudge selection 1px</span>
+            <b>X / Del</b><span>delete prop</span>
+            <b>B</b><span>set / clear a bark on the prop</span>
+            <b>1–9, 0</b><span>jump to level (0 = 10)</span>
+            <b>C</b><span>copy layout JSON</span>
+            <b>S</b><span>save into the level file</span>
+            <b>H</b><span>show / hide this legend</span>
+            <b>L</b><span>exit the editor</span>
+          </div>
+        </div>
+
+        <!-- character editor: rewrite a mind's prompts; saves into the level JSON -->
+        <div id="charedit" class="hidden">
+          <div class="ce-head"><span id="ce-title">EDIT MIND</span><span class="ce-close" id="ce-cancel">Esc to cancel</span></div>
+          <div class="ce-grid">
+            <label>name<input id="ce-name" /></label>
+            <label>title<input id="ce-titlef" /></label>
+            <label>gender<select id="ce-gender"><option value="male">male</option><option value="female">female</option><option value=""></option></select></label>
+            <label class="wide">persona<textarea id="ce-persona" rows="2"></textarea></label>
+            <label class="wide">voice<textarea id="ce-voice" rows="2"></textarea></label>
+            <label class="wide">biography (the hippocampus reads this)<textarea id="ce-bio" rows="5"></textarea></label>
+            <label class="wide">fear<input id="ce-fear" /></label>
+            <label class="holder-only">approach words (comma)<input id="ce-approach" /></label>
+            <label class="holder-only">goal<input id="ce-goal" /></label>
+            <label class="holder-only">key location<input id="ce-keyloc" /></label>
+            <label>known people (comma)<input id="ce-known" /></label>
+            <label>needs reputation<input id="ce-needsrep" type="number" step="1" /></label>
+            <label>arousal<input id="ce-arousal" type="number" step="0.5" min="0" max="10" /></label>
+            <label>life<input id="ce-life" type="number" step="50" min="100" /></label>
+            <label class="wide">secrets (JSON list; "teaches" unlocks approach words)<textarea id="ce-secrets" rows="7" spellcheck="false"></textarea></label>
+          </div>
+          <div class="ce-foot">
+            <span id="ce-err"></span>
+            <button id="ce-save">Save mind</button>
+          </div>
+        </div>
+
+        <!-- Visual-novel dialogue: overlaid on the bottom of the game field, shown only while
+             talking. Portrait + name + reply, with the brain ("open the skull") folded in below. -->
+        <div id="dialogue" class="hidden">
+          <canvas id="dlg-portrait" width="180" height="180"></canvas>
+          <div id="dlg-main">
+            <div id="dlg-head">
+              <div id="dlg-speaker"></div>
+              <span id="dlg-life"></span>
+              <button id="dlg-brainbtn" class="hidden" title="open the skull (/brain)">🧠</button>
+            </div>
+            <div id="dlg-reply" class="muted"></div>
+            <div id="dlg-brain" class="hidden"></div>
+            <div id="dlg-input-row">
+              <input id="dlg-input" type="text" autocomplete="off"
+                     placeholder="Speak plainly… (Enter to say, Esc to step back)" />
+              <button id="dlg-send">Speak</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="controls">
+      <span><b>WASD</b>/<b>arrows</b> move</span>
+      <span><b>E</b> talk / use door</span>
+      <span><b>/brain</b> open the skull</span>
+      <span><b>Esc</b> step back</span>
+      <span><b>R</b> restart run</span>
+    </footer>
+  </div>
+
+  <div id="moral" class="hidden">
+    <div class="moral-card">
+      <pre id="moral-text"></pre>
+      <button id="moral-restart">Begin again — press R</button>
+    </div>
+  </div>
+
+  <!-- ===================== Main menu ===================== -->
+  <div id="menu">
+    <div class="menu-vignette"></div>
+    <div class="menu-inner">
+      <div class="menu-emblem"><img id="menu-emblem-img" alt="" /></div>
+      <h1 class="menu-title">M<span class="ai">I</span>NDLOCK</h1>
+      <div class="menu-rule"><img id="menu-key-img" alt="" /></div>
+      <div class="menu-tag">One door. One guarded mind. A life measured in words.</div>
+      <p class="menu-sub">An escape room where every character is not one AI but a hierarchy of tiny
+        offline language models — the departments of one mind. You don't crack a code. You change a
+        person's decision by understanding their fears and the memories they keep.</p>
+      <div class="menu-btns">
+        <button id="menu-story" class="menu-btn primary">▶ Story</button>
+        <button id="menu-endless" class="menu-btn">∞ Endless</button>
+        <button id="menu-editor" class="menu-btn">✎ Level editor</button>
+        <button id="menu-how" class="menu-btn">How to play</button>
+        <button id="menu-mute" class="menu-btn ghost" aria-pressed="false">♪ Sound: on</button>
+      </div>
+      <div class="menu-modes">
+        <span><b>Story</b> — a finite, hand-built campaign.</span>
+        <span><b>Endless</b> — rooms generate forever; reputation and death carry.</span>
+        <span><b>Editor</b> — restyle the authored rooms and rewrite their minds; saves into the level files.</span>
+      </div>
+      <div id="menu-howto" class="menu-howto hidden">
+        <div><b>WASD</b> / arrows — move through the room</div>
+        <div><b>E</b> — talk to a mind · pick up the key · use the door</div>
+        <div><b>Type &amp; Enter</b> — speak plainly; change their mind by reaching them</div>
+        <div><b>/brain</b> — open the skull: each region tells you how to reach this person</div>
+        <div><b>R</b> restart run · <b>Esc</b> step back</div>
+      </div>
+      <div class="menu-foot">Thousand Token Wood · every mind here is mortal — spend it well</div>
+    </div>
+    <div class="menu-hint" id="menu-hint">click to begin <span>♪</span></div>
+  </div>
+
+  <script src="/static/game.js"></script>
+</body>
+</html>

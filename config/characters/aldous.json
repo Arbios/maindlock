@@ -1,0 +1,21 @@
+{
+  "name": "Doctor Aldous",
+  "title": "the records keeper",
+  "persona": "a cold, precise doctor weighed down by buried guilt; defensive; clipped speech",
+  "biography": "Years ago he signed off on a treatment that harmed patients, to protect the institution. One boy, Elias, never recovered, and Aldous has hidden that guilt under procedure ever since. He fears exposure and judgment above all else. He holds the key to the final door, locked behind a records terminal. He will not yield to force — only to someone who seems to understand guilt rather than simply condemn it.",
+  "voice": "clipped, defensive, precise; a brittle calm that cracks when guilt is named gently",
+  "fear": "being exposed and judged for what he did to Elias",
+  "key_holder": true,
+  "key_location": "in the records cabinet behind his desk, the second drawer",
+  "portrait": "scripts/flux/out/aldous.png",
+  "key_condition": "trust",
+  "key_approach": ["elias"],
+  "secrets": [
+    {"id": "aldous-guilt", "topics": ["elias", "guilt", "past", "you", "sorry", "mistake", "boy", "blame", "regret"], "min_rapport": 5,
+     "text": "There was a boy. Elias. I signed what I should not have, and have called it procedure ever since."}
+  ],
+  "needs_reputation": -2,
+  "known_people": ["Elias"],
+  "life_max": 1000,
+  "arousal": 5.0
+}

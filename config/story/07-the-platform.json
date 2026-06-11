@@ -1,0 +1,324 @@
+{
+  "name": "The Platform",
+  "intro": "Wind down a stone platform. A departure board flickers times for trains that aren't coming. A woman sits on the bench like punctuation at the end of a sentence you don't remember writing.",
+  "holder": {
+    "name": "Merta",
+    "title": "the one who waited",
+    "persona": "a woman on a cold bench who has finished crying and started counting; armored in precision",
+    "voice": "flat, exact, words like closed doors; sarcasm exactly where the hurt is",
+    "biography": "She waited on this platform at six o'clock for two years — the six o'clock was their train home. Then the task came, and he arrived at nine, at ten, with the laptop light still on his face, and then not at all. She left him before the crash, which means she never got to leave him for it, and after the crash she couldn't even hate him cleanly. Her anger is the last solid plank she stands on.",
+    "fear": "that she will forgive him and lose the only solid thing she has left",
+    "goal": "the key",
+    "key_location": "under the bench, where your ticket used to be",
+    "approach": [
+      "evenings"
+    ],
+    "sprite_key": "widow",
+    "gender": "female",
+    "arousal": 6,
+    "secrets": [
+      {
+        "id": "merta-us",
+        "topics": [
+          "us",
+          "we",
+          "her",
+          "love",
+          "left",
+          "broke",
+          "wait",
+          "waited",
+          "six",
+          "platform",
+          "bench",
+          "fault"
+        ],
+        "min_rapport": 3,
+        "text": "We broke up because of you — don't come closer. Every evening, six o'clock, that bench. You came at nine, at ten, with the screen still in your eyes. I didn't leave you for someone else. I left you for no one. No one was already there."
+      },
+      {
+        "id": "merta-crash-site",
+        "topics": [
+          "evenings",
+          "evening",
+          "out",
+          "exit",
+          "door",
+          "way",
+          "where",
+          "go",
+          "leave",
+          "next"
+        ],
+        "min_rapport": 6,
+        "text": "...You even ask for the way out like you're filing a ticket. Fine. The way out is the one place you never went. The crash site. Go and stand in what you solved.",
+        "teaches": [
+          "crash"
+        ]
+      }
+    ],
+    "known_people": [
+      "Olav"
+    ],
+    "yield_line": "Take it and go where you never went. The crash site. Stand in what you solved. Then — only then — we are even."
+  },
+  "knower": {
+    "name": "Olav",
+    "title": "the stationmaster",
+    "persona": "a stationmaster who has watched every wait this platform ever held and remembers them by their shoes",
+    "voice": "slow, kindly, smells of coal and patience; speaks in timetables and small mercies",
+    "relation_to_holder": "watched her wait for two years",
+    "sprite_key": "shopkeeper",
+    "gender": "male",
+    "secrets": [
+      {
+        "id": "olav-her",
+        "topics": [
+          "her",
+          "woman",
+          "merta",
+          "bench",
+          "wait",
+          "who",
+          "why",
+          "cold",
+          "sits"
+        ],
+        "min_rapport": 2,
+        "text": "Two years she waited the six o'clock. The man came later and later, then not at all. You don't forget a face that checks the board that many times. The board didn't forget either — look at it. Still showing the six o'clock."
+      },
+      {
+        "id": "olav-evenings",
+        "topics": [
+          "say",
+          "help",
+          "talk",
+          "reach",
+          "how",
+          "what",
+          "word",
+          "her"
+        ],
+        "min_rapport": 4,
+        "text": "If you talk to her, talk about the evenings. Not the crash, not the news — the evenings. That's where she still lives. That's the station the six o'clock actually leaves from.",
+        "teaches": [
+          "evenings"
+        ]
+      }
+    ],
+    "known_people": [
+      "Merta"
+    ]
+  },
+  "layout": {
+    "theme": 12,
+    "mood": {
+      "in": "rgb(118,130,152)",
+      "out": "rgb(6,8,12)"
+    },
+    "windowLight": {
+      "col": "rgba(150,180,255,0.4)",
+      "mid": "rgba(105,135,215,0.12)",
+      "r": 72
+    },
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "departure_board",
+        "x": 240,
+        "y": 44,
+        "h": 21,
+        "background": true,
+        "light": true,
+        "blink": true,
+        "lightY": 78,
+        "lightR": 90,
+        "lightCol": "rgba(255,214,120,0.8)",
+        "lightMid": "rgba(255,170,80,0.2)"
+      },
+      {
+        "key": "sconce",
+        "x": 488,
+        "y": 46,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 64,
+        "lightR": 100,
+        "lightCol": "rgba(255,200,115,0.7)",
+        "lightMid": "rgba(255,150,70,0.2)"
+      },
+      {
+        "key": "clock_wall",
+        "x": 420,
+        "y": 42,
+        "h": 29,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "warning_sign",
+        "x": 160,
+        "y": 42,
+        "h": 31,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "station_bench",
+        "x": 250,
+        "y": 220,
+        "h": 25,
+        "solid": true,
+        "fw": 22,
+        "fh": 13
+      },
+      {
+        "key": "station_bench",
+        "x": 420,
+        "y": 180,
+        "h": 25,
+        "solid": true,
+        "fw": 22,
+        "fh": 13
+      },
+      {
+        "key": "lantern_floor",
+        "x": 130,
+        "y": 255,
+        "h": 56,
+        "light": true,
+        "lightY": 225,
+        "lightR": 130,
+        "lightCol": "rgba(255,200,115,0.95)",
+        "lightMid": "rgba(255,150,70,0.3)"
+      },
+      {
+        "key": "lantern_floor",
+        "x": 318,
+        "y": 234,
+        "h": 56,
+        "light": true,
+        "lightY": 204,
+        "lightR": 130,
+        "lightCol": "rgba(255,200,115,0.95)",
+        "lightMid": "rgba(255,150,70,0.3)"
+      },
+      {
+        "key": "lantern_floor",
+        "x": 505,
+        "y": 300,
+        "h": 56,
+        "light": true,
+        "lightY": 270,
+        "lightR": 130,
+        "lightCol": "rgba(255,200,115,0.95)",
+        "lightMid": "rgba(255,150,70,0.3)"
+      },
+      {
+        "key": "rails_segment",
+        "x": 80,
+        "y": 395,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 200,
+        "y": 395,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 320,
+        "y": 395,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 440,
+        "y": 395,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 560,
+        "y": 395,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "crate",
+        "x": 540,
+        "y": 140,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "barrel",
+        "x": 100,
+        "y": 350,
+        "h": 48,
+        "solid": true,
+        "fw": 32,
+        "fh": 14
+      },
+      {
+        "key": "bucket",
+        "x": 130,
+        "y": 330,
+        "h": 40
+      },
+      {
+        "key": "stain_rust",
+        "x": 240,
+        "y": 300,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 452,
+        "y": 332,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 382,
+        "y": 262,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 168,
+        "y": 312,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 282,
+        "y": 224
+      },
+      {
+        "x": 470,
+        "y": 140
+      }
+    ],
+    "tileset": "/static/room/r07"
+  }
+}

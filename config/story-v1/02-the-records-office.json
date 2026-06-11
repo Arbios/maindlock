@@ -1,0 +1,275 @@
+{
+  "name": "The Records Office",
+  "intro": "Dust and locked cabinets. Doctor Aldous guards the way out, behind a records terminal that wants a name. Sam, a former patient, watches from the corner — he sees more than he says.",
+  "holder": {
+    "name": "Doctor Aldous",
+    "title": "the records keeper",
+    "persona": "a cold, precise doctor weighed down by buried guilt; defensive; clipped speech",
+    "voice": "clipped, defensive, precise; a brittle calm that cracks when guilt is named gently",
+    "biography": "Years ago he signed off on a treatment that harmed patients, to protect the institution. One boy, Elias, never recovered, and Aldous has hidden that guilt under procedure ever since. He fears exposure and judgment above all else. He holds the key to the final door, locked behind a records terminal. He will not yield to force — only to someone who seems to understand guilt rather than simply condemn it.",
+    "fear": "being exposed and judged for what he did to Elias",
+    "goal": "the key",
+    "key_location": "in the records cabinet behind his desk, the second drawer",
+    "approach": [
+      "elias"
+    ],
+    "needs_reputation": -2,
+    "sprite_key": "doctor-aldous",
+    "gender": "male",
+    "portrait": "scripts/flux/out/aldous.png",
+    "secrets": [
+      {
+        "id": "aldous-guilt",
+        "topics": [
+          "elias",
+          "guilt",
+          "past",
+          "you",
+          "sorry",
+          "mistake",
+          "boy",
+          "blame",
+          "regret"
+        ],
+        "min_rapport": 5,
+        "text": "There was a boy. Elias. I signed what I should not have, and have called it procedure ever since."
+      }
+    ],
+    "known_people": [
+      "Elias"
+    ]
+  },
+  "knower": {
+    "name": "Sam",
+    "title": "a former patient",
+    "persona": "a fragile, watchful former patient; paranoid but perceptive; speaks in fragments",
+    "voice": "hushed, fragmented, wary; sudden flashes of startling clarity",
+    "biography": "He was kept here a long time. He notices everything and trusts almost no one — he can sense cruelty on a person the way others sense cold. He knows the word that unlocks Doctor Aldous's records terminal: the name the doctor whispers in his sleep, the boy he could not save. Sam will share it only with someone whose reputation is gentle.",
+    "fear": "being used and then discarded again by someone cruel",
+    "relation_to_holder": "",
+    "needs_reputation": 0,
+    "sprite_key": "sam",
+    "gender": "male",
+    "portrait": "scripts/flux/out/sam.png",
+    "secrets": [
+      {
+        "id": "sam-hint",
+        "topics": [
+          "terminal",
+          "code",
+          "door",
+          "doctor",
+          "aldous",
+          "out",
+          "escape",
+          "unlock"
+        ],
+        "min_rapport": 4,
+        "text": "The doctor mutters a name in his sleep. A boy's name. That word wakes the terminal."
+      },
+      {
+        "id": "sam-elias",
+        "topics": [
+          "terminal",
+          "code",
+          "name",
+          "elias",
+          "boy",
+          "word"
+        ],
+        "min_rapport": 5,
+        "text": "The name is Elias. Type it into the terminal.",
+        "teaches": [
+          "elias"
+        ]
+      }
+    ],
+    "known_people": [
+      "Elias"
+    ]
+  },
+  "terminal": {
+    "prompt": "RECORDS TERMINAL — enter a name to unlock.",
+    "answer": "elias",
+    "hint_source": "Sam"
+  },
+  "layout": {
+    "theme": 2,
+    "doors": {
+      "top": true,
+      "bottom": true
+    },
+    "objects": [
+      {
+        "key": "rug",
+        "x": 454,
+        "y": 362,
+        "h": 92,
+        "floor": true,
+        "sortY": 362
+      },
+      {
+        "key": "picture",
+        "x": 110,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "window",
+        "x": 210,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "shelf",
+        "x": 514,
+        "y": 42,
+        "h": 42,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "terminal",
+        "x": 189,
+        "y": 162,
+        "h": 72,
+        "solid": true,
+        "fw": 52,
+        "fh": 18,
+        "light": true,
+        "lightY": 132,
+        "lightR": 100,
+        "lightCol": "rgba(120,255,190,0.72)",
+        "lightMid": "rgba(70,210,160,0.22)"
+      },
+      {
+        "key": "cabinet",
+        "x": 82,
+        "y": 197,
+        "h": 78,
+        "solid": true,
+        "fw": 50,
+        "fh": 16
+      },
+      {
+        "key": "cabinet",
+        "x": 543,
+        "y": 237,
+        "h": 78,
+        "solid": true,
+        "fw": 50,
+        "fh": 16
+      },
+      {
+        "key": "table",
+        "x": 452,
+        "y": 375,
+        "h": 50,
+        "solid": true,
+        "fw": 62,
+        "fh": 22
+      },
+      {
+        "key": "stool",
+        "x": 516,
+        "y": 378,
+        "h": 34,
+        "solid": false
+      },
+      {
+        "key": "candle",
+        "x": 453,
+        "y": 340,
+        "h": 30,
+        "solid": false,
+        "shadow": false,
+        "sortY": 388,
+        "light": true,
+        "lightY": 334,
+        "lightR": 120,
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "crate",
+        "x": 165,
+        "y": 292,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "bucket",
+        "x": 165,
+        "y": 356,
+        "h": 40,
+        "solid": false
+      },
+      {
+        "key": "plant",
+        "x": 399,
+        "y": 93,
+        "h": 56,
+        "solid": false
+      },
+      {
+        "key": "nvidia",
+        "x": 210,
+        "y": 280,
+        "h": 80,
+        "solid": false,
+        "shadow": true,
+        "light": true,
+        "blink": true,
+        "spark": true,
+        "lightY": 266,
+        "lightR": 98,
+        "lightCol": "rgba(120,255,124,0.92)",
+        "lightMid": "rgba(55,200,70,0.30)"
+      },
+      {
+        "key": "huggingface",
+        "x": 451,
+        "y": 335,
+        "h": 58,
+        "solid": false,
+        "shadow": true,
+        "bark": "Is that... a face? Why is it hugging me?"
+      },
+      {
+        "key": "cabinet",
+        "x": 113,
+        "y": 200,
+        "h": 78,
+        "solid": true,
+        "fw": 50,
+        "fh": 16,
+        "sortY": 192
+      }
+    ],
+    "stations": [
+      {
+        "x": 245,
+        "y": 150
+      },
+      {
+        "x": 395,
+        "y": 196
+      }
+    ],
+    "tileset": "/static/room/records",
+    "mood": {
+      "in": "rgb(44,54,66)",
+      "out": "rgb(7,11,16)"
+    },
+    "windowLight": {
+      "col": "rgba(120,150,255,0.55)",
+      "mid": "rgba(105,135,255,0.16)",
+      "r": 78
+    }
+  }
+}

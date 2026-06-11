@@ -1,0 +1,13 @@
+{
+  "rooms": [
+    {
+      "name": "the deed to your late grandmother's antique shop",
+      "intro": "You need the deed to your late grandmother's antique shop from Mrs. Patel, who has been holding onto it since she discovered your family was trying to sell it without her knowledge.",
+      "key_holder": "Nalini",
+      "characters": [
+        "nalini.json",
+        "rohan.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "name": "The Hallway",
+  "intro": "A hallway that smells of rain on wool. A coat hangs by the door like a man who couldn't leave. Your father stands in the half-dark, turning his hat in his hands.",
+  "holder": {
+    "name": "Edwin",
+    "title": "your father",
+    "persona": "a big man made small by something he carries; stands by the coat hooks as if about to leave, or having just failed to",
+    "voice": "few words, long pauses; starts sentences he doesn't finish; gruff to hide the crack in it",
+    "biography": "A depot man all his life — forty years of timetables and grease and pride in both. He pulled strings to get his son the rail contract: steady work, he said, trains are safe, he said. Since the day of the crash he has stood in this hallway rehearsing one apology he cannot begin, wearing his coat as if the leaving would help.",
+    "fear": "that the apology is his to make and no one will ever take it from him",
+    "goal": "the key",
+    "key_location": "in the coat by the door",
+    "approach": [
+      "sorry"
+    ],
+    "sprite_key": "kael-jensen",
+    "gender": "male",
+    "portrait": "src/mindlock/game/static/sprites/npc/kael-jensen/portrait.png",
+    "arousal": 4,
+    "life_max": 1200,
+    "secrets": [
+      {
+        "id": "edwin-proud",
+        "topics": [
+          "me",
+          "who",
+          "am",
+          "i",
+          "son",
+          "work",
+          "do",
+          "did",
+          "remember"
+        ],
+        "min_rapport": 2,
+        "text": "You? You sat at a desk and told machines what to do. I bragged about it at the depot — my boy writes the brains, I said. My boy writes the brains."
+      },
+      {
+        "id": "edwin-grief",
+        "topics": [
+          "sorry",
+          "forgive",
+          "day",
+          "accident",
+          "crash",
+          "wrong",
+          "you",
+          "trouble",
+          "carry"
+        ],
+        "min_rapport": 3,
+        "text": "Come back to us, son. We're waiting. I... I was going to say it at the hospital. The word. It wouldn't come out. It's been stuck since that day, like a coat that won't come off the hook."
+      },
+      {
+        "id": "edwin-job",
+        "topics": [
+          "work",
+          "job",
+          "depot",
+          "trains",
+          "contract",
+          "brought",
+          "fault",
+          "blame",
+          "future"
+        ],
+        "min_rapport": 5,
+        "text": "It was me who brought you to the depot. Steady work, I said. Trains, I said — trains are safe. I thought I was handing you a future. I handed you to it with my own two hands.",
+        "teaches": [
+          "trains"
+        ]
+      }
+    ],
+    "known_people": [
+      "Maren"
+    ],
+    "yield_line": "It was me who brought you to the trains, son. Steady work, I said. Whatever you find behind this door — it began with me. Not with you."
+  },
+  "knower": {
+    "name": "Maren",
+    "title": "your mother",
+    "persona": "your mother, who followed you into the hallway because she follows everything that hurts in this house",
+    "voice": "warm, even, quieter here than by her fire; speaks of her husband the way you speak near sleeping children",
+    "relation_to_holder": "his wife",
+    "sprite_key": "matron",
+    "gender": "female",
+    "secrets": [
+      {
+        "id": "maren-hall",
+        "topics": [
+          "father",
+          "him",
+          "dad",
+          "silent",
+          "help",
+          "say",
+          "what",
+          "how",
+          "reach",
+          "word"
+        ],
+        "min_rapport": 2,
+        "text": "One word, love. Sorry. Say it first — it doesn't matter who owes it. In this family the word was always heavier than the debt.",
+        "teaches": [
+          "sorry"
+        ]
+      },
+      {
+        "id": "maren-coat",
+        "topics": [
+          "coat",
+          "hat",
+          "leave",
+          "leaving",
+          "door",
+          "stand",
+          "standing",
+          "why"
+        ],
+        "min_rapport": 4,
+        "text": "He puts the coat on every morning and takes it off every night, and never opens the door. He says the depot needs him. The depot closed its gates to him after the inquiry. He has nowhere to wear that coat but here."
+      }
+    ],
+    "known_people": [
+      "Edwin",
+      "Nan"
+    ]
+  },
+  "layout": {
+    "theme": 9,
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "mirror_broken",
+        "x": 198,
+        "y": 42,
+        "h": 40,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "sconce",
+        "x": 264,
+        "y": 46,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 30,
+        "lightR": 118,
+        "lightCol": "rgba(255,216,150,0.92)",
+        "lightMid": "rgba(255,170,90,0.28)"
+      },
+      {
+        "key": "sconce",
+        "x": 408,
+        "y": 46,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 30,
+        "lightR": 118,
+        "lightCol": "rgba(255,216,150,0.92)",
+        "lightMid": "rgba(255,170,90,0.28)"
+      },
+      {
+        "key": "cabinet",
+        "x": 448,
+        "y": 128,
+        "h": 78,
+        "solid": true,
+        "fw": 50,
+        "fh": 16
+      },
+      {
+        "key": "bench",
+        "x": 140,
+        "y": 180,
+        "h": 46,
+        "solid": true,
+        "fw": 60,
+        "fh": 15
+      },
+      {
+        "key": "bucket",
+        "x": 100,
+        "y": 212,
+        "h": 40
+      },
+      {
+        "key": "candle",
+        "x": 192,
+        "y": 200,
+        "h": 30,
+        "shadow": false,
+        "sortY": 202,
+        "light": true,
+        "lightR": 134,
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "rug",
+        "x": 320,
+        "y": 250,
+        "h": 104,
+        "floor": true
+      },
+      {
+        "key": "grandfather_clock",
+        "x": 560,
+        "y": 290,
+        "h": 80,
+        "solid": true,
+        "fw": 14,
+        "fh": 12
+      },
+      {
+        "key": "stain_rust",
+        "x": 114,
+        "y": 246,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 430,
+        "y": 198,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 296,
+        "y": 332,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 502,
+        "y": 348,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 384,
+        "y": 184
+      },
+      {
+        "x": 248,
+        "y": 272
+      }
+    ],
+    "mood": {
+      "in": "rgb(168,172,190)",
+      "out": "rgb(13,15,20)"
+    },
+    "tileset": "/static/room/r03"
+  }
+}

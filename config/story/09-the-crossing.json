@@ -1,0 +1,309 @@
+{
+  "name": "The Crossing",
+  "intro": "Red earth, police tape gone grey, candles guttering among flowers that someone replaces and replaces. A man stands very still. You know, without being told, that he has been standing there since before you arrived — anywhere.",
+  "holder": {
+    "name": "Aaron Voss",
+    "title": "the father at the flowers",
+    "persona": "a father standing where the flowers are; grief gone past weather and into geology",
+    "voice": "quiet, even, enormous pauses; no anger left in it, which is worse than anger",
+    "biography": "His son Daniel stood on the platform when the train left the rails. He comes here every day to not-talk to whoever did it. The driver told him about the dog on the line, and he has carried that absurd detail ever since like a stone he cannot put down or throw. He is not waiting for an apology; apologies are about the people who give them.",
+    "fear": "that the detail about the dog means his son died for nothing",
+    "goal": "the key",
+    "key_location": "among the flowers",
+    "approach": [
+      "daniel"
+    ],
+    "needs_reputation": 0,
+    "sprite_key": "the-warden",
+    "gender": "male",
+    "portrait": "scripts/flux/out/warden.png",
+    "arousal": 5,
+    "life_max": 1400,
+    "secrets": [
+      {
+        "id": "aaron-silence",
+        "topics": [
+          "son",
+          "sorry",
+          "grief",
+          "lost",
+          "flowers",
+          "memorial",
+          "forgive",
+          "talk",
+          "say"
+        ],
+        "min_rapport": 3,
+        "text": "I don't know what to talk to you about. ...But you came. The ones responsible never come. So either you're not responsible — or you're the only one who is."
+      },
+      {
+        "id": "aaron-tessa",
+        "topics": [
+          "daniel",
+          "happened",
+          "why",
+          "how",
+          "train",
+          "dog",
+          "swerve",
+          "turned",
+          "track",
+          "line"
+        ],
+        "min_rapport": 6,
+        "text": "The driver swears a dog sat between the rails. Small. Calm. Just sitting. The train turned; my boy didn't. They told me later the tag on its collar said Tessa. A dog with a name — and my son with a stone. You solved that, they say. But you did solve it.",
+        "teaches": [
+          "tessa"
+        ]
+      }
+    ],
+    "known_people": [
+      "Calder"
+    ],
+    "yield_line": "The dog had a name. Tessa. My boy got a stone. Go down into the tunnel and look at what you chose. Someone should finally look at it."
+  },
+  "knower": {
+    "name": "Calder",
+    "title": "the driver",
+    "persona": "the train driver, who survived everything except being believed; rubs his hands as if they're still waiting for orders",
+    "voice": "halting, urgent under the quiet; repeats the part nobody prints",
+    "relation_to_holder": "drove the train",
+    "sprite_key": "worker",
+    "gender": "male",
+    "secrets": [
+      {
+        "id": "calder-hands",
+        "topics": [
+          "driver",
+          "train",
+          "controls",
+          "drive",
+          "cab",
+          "brake",
+          "fault",
+          "you",
+          "happened",
+          "crash"
+        ],
+        "min_rapport": 2,
+        "text": "I never touched the controls. That's the part nobody prints. I sat in the cab with my hands in my lap while the machine made up its mind. It was very sure. Whoever taught it — it learned."
+      },
+      {
+        "id": "calder-daniel",
+        "topics": [
+          "son",
+          "boy",
+          "name",
+          "platform",
+          "victim",
+          "who",
+          "died",
+          "father",
+          "him",
+          "reach"
+        ],
+        "min_rapport": 4,
+        "text": "The father stands there every day. If you speak to him, speak the boy's name — Daniel. He's not waiting for sorry. Sorry is about you. The name is about the boy.",
+        "teaches": [
+          "daniel"
+        ]
+      }
+    ],
+    "known_people": [
+      "Aaron Voss"
+    ]
+  },
+  "layout": {
+    "theme": 15,
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "warning_sign",
+        "x": 160,
+        "y": 42,
+        "h": 31,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 200,
+        "y": 374,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 320,
+        "y": 374,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 440,
+        "y": 374,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "police_tape",
+        "x": 218,
+        "y": 238,
+        "h": 27
+      },
+      {
+        "key": "police_tape",
+        "x": 474,
+        "y": 256,
+        "h": 27
+      },
+      {
+        "key": "memorial_flowers",
+        "x": 300,
+        "y": 260,
+        "h": 31,
+        "light": true,
+        "lightR": 64,
+        "lightCol": "rgba(255,160,40,0.55)",
+        "lightMid": "rgba(255,120,30,0.2)"
+      },
+      {
+        "key": "memorial_flowers",
+        "x": 336,
+        "y": 270,
+        "h": 31,
+        "light": true,
+        "lightR": 64,
+        "lightCol": "rgba(255,160,40,0.55)",
+        "lightMid": "rgba(255,120,30,0.2)"
+      },
+      {
+        "key": "memorial_flowers",
+        "x": 318,
+        "y": 290,
+        "h": 31
+      },
+      {
+        "key": "candle",
+        "x": 286,
+        "y": 282,
+        "h": 30,
+        "shadow": false,
+        "sortY": 320,
+        "light": true,
+        "lightR": 84,
+        "lightCol": "rgba(255,170,45,0.95)",
+        "lightMid": "rgba(255,135,35,0.3)",
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "candle",
+        "x": 352,
+        "y": 268,
+        "h": 30,
+        "shadow": false,
+        "sortY": 300,
+        "light": true,
+        "lightR": 84,
+        "lightCol": "rgba(255,170,45,0.95)",
+        "lightMid": "rgba(255,135,35,0.3)",
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "candle",
+        "x": 320,
+        "y": 306,
+        "h": 30,
+        "shadow": false,
+        "sortY": 332,
+        "light": true,
+        "lightR": 84,
+        "lightCol": "rgba(255,170,45,0.95)",
+        "lightMid": "rgba(255,135,35,0.3)",
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "lantern_floor",
+        "x": 238,
+        "y": 386,
+        "h": 56,
+        "light": true,
+        "lightY": 344,
+        "lightR": 50,
+        "lightCol": "rgba(200,140,70,0.85)",
+        "lightMid": "rgba(175,115,55,0.24)"
+      },
+      {
+        "key": "crate",
+        "x": 540,
+        "y": 350,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "mine_cart",
+        "x": 100,
+        "y": 350,
+        "h": 36,
+        "solid": true,
+        "fw": 22,
+        "fh": 14
+      },
+      {
+        "key": "stain_rust",
+        "x": 168,
+        "y": 300,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 502,
+        "y": 356,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 414,
+        "y": 322,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 258,
+        "y": 198,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 398,
+        "y": 282
+      },
+      {
+        "x": 196,
+        "y": 326
+      }
+    ],
+    "mood": {
+      "in": "rgb(192,158,114)",
+      "out": "rgb(14,8,6)"
+    },
+    "tileset": "/static/room/r09"
+  }
+}

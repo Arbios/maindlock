@@ -1,0 +1,370 @@
+{
+  "name": "The Corner Office",
+  "intro": "Two monitors glow over an immaculate desk. The man behind it forgives you before you say a word — and that, somehow, is the worst thing yet.",
+  "holder": {
+    "name": "Colin Hart",
+    "title": "your supervisor",
+    "persona": "a manager so reasonable it frightens; practices absolution as a management style",
+    "voice": "measured, generous, never blames — which is worse; pauses before the word 'spec'",
+    "biography": "He signed the rail contract, he assigned the task after every senior engineer refused it, and he reviewed the final branch himself. When the cameras came he said the software performed to spec, and he has been saying it to himself every morning since, the way other men say prayers. He keeps the sign-off sheet in the drawer that locks.",
+    "fear": "the words 'sign-off' said out loud in his own office",
+    "goal": "the key",
+    "key_location": "in the desk drawer that locks",
+    "approach": [
+      "spec"
+    ],
+    "sprite_key": "kaelin-reyes",
+    "gender": "male",
+    "portrait": "src/mindlock/game/static/sprites/npc/kaelin-reyes/portrait.png",
+    "arousal": 3,
+    "secrets": [
+      {
+        "id": "colin-truth",
+        "topics": [
+          "task",
+          "software",
+          "trains",
+          "wrote",
+          "code",
+          "work",
+          "job",
+          "what",
+          "did",
+          "rail",
+          "solve"
+        ],
+        "min_rapport": 4,
+        "text": "I don't judge you. You simply couldn't solve an unsolvable task. You wrote control software for passenger rail. Three months in one branch of edge-cases — the last one was named 'obstacle on the line, class: living'. You closed it as solved. And it worked exactly as you wrote it."
+      },
+      {
+        "id": "colin-merta",
+        "topics": [
+          "spec",
+          "sign",
+          "signed",
+          "blame",
+          "fault",
+          "responsibility",
+          "after",
+          "evenings",
+          "home",
+          "life",
+          "alone"
+        ],
+        "min_rapport": 6,
+        "text": "The spec said: minimize loss. Two words. I signed them. ...You worked like a man hiding from something, Adam. Merta used to wait for you on the platform at six. Ask her what the task ate first. It ate your evenings.",
+        "teaches": [
+          "evenings"
+        ]
+      }
+    ],
+    "known_people": [
+      "Signe"
+    ],
+    "yield_line": "You couldn't solve it because it had no solution, Adam. The code did exactly what you wrote. Go — Merta still waits where the six o'clock used to leave."
+  },
+  "knower": {
+    "name": "Signe",
+    "title": "his assistant",
+    "persona": "an assistant who schedules a guilty man's calendar and proofreads his absolutions",
+    "voice": "crisp, discreet, italicized hints; never says more than she means to — exactly less",
+    "relation_to_holder": "his assistant",
+    "sprite_key": "astrid-jensen",
+    "gender": "female",
+    "portrait": "src/mindlock/game/static/sprites/npc/astrid-jensen/portrait.png",
+    "secrets": [
+      {
+        "id": "signe-spec",
+        "topics": [
+          "colin",
+          "him",
+          "statement",
+          "camera",
+          "news",
+          "said",
+          "spec",
+          "reach",
+          "how",
+          "talk"
+        ],
+        "min_rapport": 3,
+        "text": "He practiced the statement in here for an hour before the cameras. 'Performed to spec. Performed to spec.' If you want him to look up from that desk, say the word back to him: spec. He flinches like it's his name.",
+        "teaches": [
+          "spec"
+        ]
+      },
+      {
+        "id": "signe-gateway",
+        "topics": [
+          "terminal",
+          "computer",
+          "gateway",
+          "archive",
+          "files",
+          "depot",
+          "branch",
+          "code",
+          "folders"
+        ],
+        "min_rapport": 5,
+        "text": "The depot gateway in the corner still mounts his old archive — read-only now, nobody had the heart to wipe it. Look at the branch folders. The last one he merged is still there, named for what sat on the rails that night."
+      }
+    ],
+    "known_people": [
+      "Colin Hart"
+    ]
+  },
+  "layout": {
+    "theme": 3,
+    "mood": {
+      "in": "rgb(181,176,166)",
+      "out": "rgb(7,9,13)"
+    },
+    "windowLight": {
+      "col": "rgba(120,150,255,0.68)",
+      "mid": "rgba(105,135,255,0.2)",
+      "r": 96
+    },
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "window",
+        "x": 150,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "clock_wall",
+        "x": 240,
+        "y": 42,
+        "h": 29,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "picture",
+        "x": 440,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "window",
+        "x": 520,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "dev_workstation",
+        "x": 335,
+        "y": 164,
+        "h": 50,
+        "solid": true,
+        "fw": 44,
+        "fh": 18,
+        "light": true,
+        "lightY": 140,
+        "lightR": 80,
+        "lightCol": "rgba(80,130,200,0.85)",
+        "lightMid": "rgba(70,110,180,0.22)"
+      },
+      {
+        "key": "floor_litter",
+        "x": 358,
+        "y": 150,
+        "h": 18,
+        "floor": true,
+        "shadow": false,
+        "light": true,
+        "lightY": 142,
+        "lightR": 64,
+        "lightCol": "rgba(80,130,200,0.65)",
+        "lightMid": "rgba(70,110,180,0.16)"
+      },
+      {
+        "key": "armchair_worn",
+        "x": 350,
+        "y": 194,
+        "h": 34
+      },
+      {
+        "key": "bookshelf_tall",
+        "x": 100,
+        "y": 130,
+        "h": 72,
+        "solid": true,
+        "fw": 15,
+        "fh": 14
+      },
+      {
+        "key": "bookshelf_tall",
+        "x": 130,
+        "y": 130,
+        "h": 72,
+        "solid": true,
+        "fw": 15,
+        "fh": 14
+      },
+      {
+        "key": "filing_cabinet",
+        "x": 560,
+        "y": 140,
+        "h": 52,
+        "solid": true,
+        "fw": 18,
+        "fh": 14
+      },
+      {
+        "key": "filing_cabinet",
+        "x": 560,
+        "y": 175,
+        "h": 52,
+        "solid": true,
+        "fw": 18,
+        "fh": 14
+      },
+      {
+        "key": "filing_cabinet",
+        "x": 560,
+        "y": 210,
+        "h": 52,
+        "solid": true,
+        "fw": 18,
+        "fh": 14
+      },
+      {
+        "key": "terminal",
+        "x": 120,
+        "y": 330,
+        "h": 72,
+        "solid": true,
+        "fw": 52,
+        "fh": 18,
+        "light": true,
+        "lightR": 100,
+        "lightCol": "rgba(120,255,190,0.72)",
+        "lightMid": "rgba(70,210,160,0.22)"
+      },
+      {
+        "key": "desk_lamp",
+        "x": 282,
+        "y": 158,
+        "h": 38,
+        "solid": true,
+        "fw": 19,
+        "fh": 14,
+        "light": true,
+        "lightY": 144,
+        "lightR": 78,
+        "lightCol": "rgba(255,170,90,0.95)",
+        "lightMid": "rgba(255,140,70,0.28)"
+      },
+      {
+        "key": "floor_litter",
+        "x": 150,
+        "y": 100,
+        "h": 18,
+        "floor": true,
+        "shadow": false,
+        "light": true,
+        "lightY": 150,
+        "lightR": 78,
+        "lightCol": "rgba(120,145,190,0.40)",
+        "lightMid": "rgba(120,145,190,0.14)"
+      },
+      {
+        "key": "floor_litter",
+        "x": 150,
+        "y": 101,
+        "h": 18,
+        "floor": true,
+        "shadow": false,
+        "light": true,
+        "lightY": 215,
+        "lightR": 100,
+        "lightCol": "rgba(120,145,190,0.28)",
+        "lightMid": "rgba(120,145,190,0.10)"
+      },
+      {
+        "key": "floor_litter",
+        "x": 520,
+        "y": 100,
+        "h": 18,
+        "floor": true,
+        "shadow": false,
+        "light": true,
+        "lightY": 150,
+        "lightR": 78,
+        "lightCol": "rgba(120,145,190,0.40)",
+        "lightMid": "rgba(120,145,190,0.14)"
+      },
+      {
+        "key": "floor_litter",
+        "x": 520,
+        "y": 101,
+        "h": 18,
+        "floor": true,
+        "shadow": false,
+        "light": true,
+        "lightY": 215,
+        "lightR": 100,
+        "lightCol": "rgba(120,145,190,0.28)",
+        "lightMid": "rgba(120,145,190,0.10)"
+      },
+      {
+        "key": "stain_rust",
+        "x": 168,
+        "y": 366,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 96,
+        "y": 296,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 506,
+        "y": 332,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "plant",
+        "x": 560,
+        "y": 360,
+        "h": 56
+      },
+      {
+        "key": "rug",
+        "x": 340,
+        "y": 280,
+        "h": 104,
+        "floor": true
+      }
+    ],
+    "stations": [
+      {
+        "x": 350,
+        "y": 230
+      },
+      {
+        "x": 480,
+        "y": 290
+      }
+    ],
+    "tileset": "/static/room/r06"
+  },
+  "terminal_files": "adam.merrick@depot-gw:/srv/rail/aurora$ ls -R\n\nconfigs/\n  braking_curves_v12.yaml\n  sensor_fusion.cfg\nbranches/edge-cases/\n  obstacle_static.cfg\n  obstacle_debris.cfg\n  obstacle_living/        merged 03:12 · review: c.hart\n    decision_matrix.cfg\n    minimize_loss.spec\n\n[ read-only archive — open: PERMISSION DENIED ]"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "The Infirmary",
+  "intro": "White beds, carbolic air. Sister Agnes keeps the ward key chained to her wrist and her mercy under lock with it. Tomas, the night orderly, mops the same clean floor — he watches her the way one watches weather.",
+  "holder": {
+    "name": "Sister Agnes",
+    "title": "the head nurse",
+    "persona": "a rigid, immaculate nurse who treats rules as the last wall between this place and chaos; her kindness has scar tissue over it",
+    "voice": "clipped, formal, scripture-cadenced; cracks only when an old name surfaces",
+    "biography": "She has run the infirmary through two epidemics and a war. A young soldier, Pavel, died on her ward during the war because she followed the rationing order and split his dose. She has kept every rule since as penance, and the ward key never leaves her wrist. She believes mercy without order kills — because once, for her, it did.",
+    "fear": "that breaking one rule will let everything she holds back come flooding in",
+    "goal": "the ward key",
+    "key_location": "chained to her wrist",
+    "approach": ["pavel"],
+    "gender": "female",
+    "needs_reputation": -2,
+    "secrets": [
+      {"id": "agnes-rule", "topics": ["rules", "rule", "order", "why", "strict", "mercy", "war", "past", "afraid", "trust"], "min_rapport": 5,
+       "text": "You think the rules are cruelty. The rules are what is left of me after the war. I bent one, once. I do not speak of it."}
+    ],
+    "known_people": ["Pavel"],
+    "life_max": 1000,
+    "arousal": 5.0
+  },
+  "knower": {
+    "name": "Tomas",
+    "title": "the night orderly",
+    "persona": "a soft-spoken giant who mops floors and remembers everything; gentle with the broken, wary of the loud",
+    "voice": "quiet, unhurried, plain words; trails off when he comes close to a secret",
+    "biography": "He has worked nights here for fifteen years and was a stretcher-bearer in the war. He carried the soldier Pavel to Sister Agnes's ward and was there the night the boy died under the rationing order. He has watched her punish herself with rules ever since. He will give a stranger that name only if their hands seem clean — word of cruelty travels fast in a place this quiet.",
+    "fear": "loud men who break quiet people",
+    "relation_to_holder": "old comrade from the war",
+    "gender": "male",
+    "needs_reputation": 0,
+    "secrets": [
+      {"id": "agnes-wall", "topics": ["agnes", "sister", "nurse", "her", "she", "key", "ward", "strict", "rules", "cares", "lonely", "kind"], "min_rapport": 3,
+       "text": "The Sister wasn't carved from the rulebook. The war did that. Something happened on her ward she never put down."},
+      {"id": "agnes-pavel", "topics": ["agnes", "sister", "nurse", "her", "she", "war", "soldier", "boy", "died", "death", "name", "who", "pavel", "ward"], "min_rapport": 5,
+       "teaches": ["pavel"],
+       "text": "There was a soldier — Pavel. He died on her ward following an order she should never have been given. Say his name gently. She has waited twenty years for someone to say it without blame."}
+    ],
+    "known_people": ["Pavel"],
+    "life_max": 1000,
+    "arousal": 4.0
+  }
+}

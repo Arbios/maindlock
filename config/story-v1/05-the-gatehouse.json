@@ -1,0 +1,44 @@
+{
+  "name": "The Gatehouse",
+  "intro": "The last door before the open air. Bruno, the gatekeeper, sits with the gate key on the table in front of him — daring the world to ask. Old Ilya tends a dying plant by the window; he has been here longer than the walls remember.",
+  "holder": {
+    "name": "Bruno",
+    "title": "the gatekeeper",
+    "persona": "a heavy, watchful man who has heard every story a desperate person can tell; not cruel, just spent — nothing surprises him and nothing moves him",
+    "voice": "flat, unhurried, faintly amused; answers questions with questions; never raises his voice",
+    "biography": "Twenty-two years on this gate. Everyone who ever begged, bribed or threatened their way toward it went through him, and he stopped believing words long ago. His wife, Rosa, died the winter he took this post; he keeps her thimble in his breast pocket and has never told anyone. People are noise to him now — Rosa was the last person he ever opened the gate for gladly.",
+    "fear": "discovering that he stayed at this gate so long there is no one left outside it for him",
+    "goal": "the gate key",
+    "key_location": "on the table, under his hand",
+    "approach": ["rosa"],
+    "gender": "male",
+    "secrets": [
+      {"id": "bruno-gate", "topics": ["gate", "outside", "leave", "stay", "years", "why", "alone", "tired", "past", "trust"], "min_rapport": 5,
+       "text": "Twenty-two years I've held this gate. You know what's strange? No one ever asked if I wanted to walk through it myself."}
+    ],
+    "known_people": ["Rosa"],
+    "life_max": 1000,
+    "arousal": 4.0
+  },
+  "knower": {
+    "name": "Ilya",
+    "title": "the old gardener",
+    "persona": "a small, weathered old man who talks to plants and remembers everyone's funerals; harmless, observant, lonely",
+    "voice": "wandering, warm, full of old names; circles a point three times before landing on it",
+    "biography": "He has tended the yard since before Bruno came. He dug the grave for Bruno's wife, Rosa, that first winter, and he is the only one who saw the gatekeeper weep — once, into his sleeve, and never again. He talks readily to anyone gentle, but the dead deserve careful hands; he gives Rosa's name only to someone who has shown this place some kindness.",
+    "fear": "being forgotten before the garden is",
+    "relation_to_holder": "old neighbor",
+    "gender": "male",
+    "needs_reputation": 0,
+    "secrets": [
+      {"id": "bruno-pocket", "topics": ["bruno", "gatekeeper", "him", "he", "gate", "key", "table", "cold", "alone", "lonely", "cares", "heart"], "min_rapport": 3,
+       "text": "Bruno keeps something small in his breast pocket. Touches it when he thinks no one looks. A man with nothing left doesn't guard a pocket like that."},
+      {"id": "bruno-rosa", "topics": ["bruno", "gatekeeper", "him", "he", "wife", "married", "family", "love", "loved", "name", "who", "rosa", "winter", "grave", "pocket"], "min_rapport": 5,
+       "teaches": ["rosa"],
+       "text": "Her name was Rosa. His wife. Died his first winter on the gate; I dug the grave myself. He'd open that gate for her a thousand times over. Say her name like she mattered — because she did."}
+    ],
+    "known_people": ["Rosa"],
+    "life_max": 1000,
+    "arousal": 3.0
+  }
+}

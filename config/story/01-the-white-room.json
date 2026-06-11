@@ -1,0 +1,477 @@
+{
+  "name": "The White Room",
+  "intro": "The ward hums in the half-dark. Pale tile, water-stained walls, a monitor counting something that might be your heart. A doctor stands as if he has been waiting longer than the room has existed. The night nurse watches the wall — there is no clock on it.",
+  "holder": {
+    "name": "Dr. Hale",
+    "title": "the keeper of the white room",
+    "persona": "a calm physician of this too-bright place; unhurried, exact, kind the way scalpels are kind",
+    "voice": "precise, unhurried, clinical warmth; asks more than he answers; never raises his voice",
+    "biography": "He has kept this room for as long as the machines have hummed. Patients arrive who do not remember arriving, and he asks each of them the same question and waits. He believes a mind must want to live before any door will open for it. The monitor beside the bed has never once been wrong, and never once been helpful.",
+    "fear": "a patient who stops wondering whether he is alive",
+    "goal": "the key",
+    "key_location": "in the pocket of his white coat",
+    "approach": [
+      "alive"
+    ],
+    "sprite_key": "doctor-aldous",
+    "gender": "male",
+    "portrait": "scripts/flux/out/aldous.png",
+    "arousal": 3,
+    "secrets": [
+      {
+        "id": "hale-whisper",
+        "topics": [
+          "me",
+          "who",
+          "am",
+          "i",
+          "remember",
+          "arrived",
+          "brought",
+          "sleep",
+          "whisper",
+          "say",
+          "came"
+        ],
+        "min_rapport": 2,
+        "text": "When they wheeled you in, you were whispering in your sleep. If — then. If — then. All night. Like a prayer in a language with only two words."
+      },
+      {
+        "id": "hale-question",
+        "topics": [
+          "alive",
+          "dead",
+          "real",
+          "dream",
+          "awake",
+          "body",
+          "monitor",
+          "machine",
+          "heart",
+          "doubt"
+        ],
+        "min_rapport": 3,
+        "text": "So — are you alive? Don't rush. The dead never wonder; that you wonder is already something. The monitor never lies, but it never answers either."
+      },
+      {
+        "id": "hale-home",
+        "topics": [
+          "door",
+          "leave",
+          "out",
+          "exit",
+          "where",
+          "go",
+          "next",
+          "home",
+          "back",
+          "way"
+        ],
+        "min_rapport": 5,
+        "text": "You were not brought here to be repaired — your body is elsewhere, doing that on its own. Go where you were first assembled. Home. Say the word like you mean it, and doors will remember you.",
+        "teaches": [
+          "home"
+        ]
+      }
+    ],
+    "known_people": [
+      "Ana"
+    ],
+    "yield_line": "You were not brought here to be repaired — your body is doing that without you. Go where you were first assembled. Home. They are waiting."
+  },
+  "knower": {
+    "name": "Ana",
+    "title": "the night nurse",
+    "persona": "a night nurse who has watched too many monitors; gentle, tired, says true things quietly",
+    "voice": "soft, watchful, a little dry; short sentences that land",
+    "relation_to_holder": "his night nurse",
+    "sprite_key": "molly",
+    "gender": "female",
+    "portrait": "scripts/flux/out/lena.png",
+    "secrets": [
+      {
+        "id": "ana-hands",
+        "topics": [
+          "me",
+          "who",
+          "hands",
+          "sleep",
+          "do",
+          "work",
+          "was",
+          "before",
+          "life"
+        ],
+        "min_rapport": 3,
+        "text": "Your hands type while you sleep. Ten fingers, small precise movements, hours of it. Whatever you were out there — your hands still are."
+      },
+      {
+        "id": "ana-doctor",
+        "topics": [
+          "doctor",
+          "hale",
+          "him",
+          "he",
+          "key",
+          "door",
+          "coat",
+          "white",
+          "out"
+        ],
+        "min_rapport": 2,
+        "text": "He keeps the key in his coat and the question on his tongue. He won't give you one without the other — it's the only rule he has."
+      },
+      {
+        "id": "ana-alive",
+        "topics": [
+          "question",
+          "answer",
+          "alive",
+          "want",
+          "live",
+          "help",
+          "how",
+          "say",
+          "what"
+        ],
+        "min_rapport": 4,
+        "text": "When he asks his question, don't be clever. Tell him you want to be alive. The wanting is the answer — it's the only thing this room can't measure.",
+        "teaches": [
+          "alive"
+        ]
+      }
+    ],
+    "known_people": [
+      "Dr. Hale"
+    ]
+  },
+  "layout": {
+    "theme": 0,
+    "doors": {
+      "top": true,
+      "bottom": true
+    },
+    "objects": [
+      {
+        "key": "lamp_hanging",
+        "x": 110,
+        "y": 44,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 50,
+        "lightR": 150,
+        "lightCol": "rgba(255,176,90,0.75)",
+        "lightMid": "rgba(255,150,70,0.22)"
+      },
+      {
+        "key": "wall_vent",
+        "x": 205,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "light": true,
+        "lightY": 62,
+        "lightR": 78,
+        "lightCol": "rgba(90,200,180,0.55)",
+        "lightMid": "rgba(80,170,155,0.16)"
+      },
+      {
+        "key": "poster_torn",
+        "x": 248,
+        "y": 42,
+        "h": 36,
+        "background": true
+      },
+      {
+        "key": "medicine_cabinet",
+        "x": 278,
+        "y": 42,
+        "h": 38,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "wall_vent",
+        "x": 452,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "light": true,
+        "lightY": 62,
+        "lightR": 78,
+        "lightCol": "rgba(90,200,180,0.55)",
+        "lightMid": "rgba(80,170,155,0.16)"
+      },
+      {
+        "key": "ivy_wall",
+        "x": 530,
+        "y": 44,
+        "h": 38,
+        "background": true,
+        "shadow": false
+      },
+      {
+        "key": "privacy_screen",
+        "x": 92,
+        "y": 168,
+        "h": 66,
+        "solid": true,
+        "fw": 44,
+        "fh": 12
+      },
+      {
+        "key": "ward_bed",
+        "x": 158,
+        "y": 158,
+        "h": 60,
+        "solid": true,
+        "fw": 56,
+        "fh": 20,
+        "bark": "Hm, am I was here?"
+      },
+      {
+        "key": "iv_stand",
+        "x": 202,
+        "y": 117,
+        "h": 55
+      },
+      {
+        "key": "crt_cart",
+        "x": 246,
+        "y": 152,
+        "h": 62,
+        "solid": true,
+        "fw": 26,
+        "fh": 14,
+        "light": true,
+        "lightY": 36,
+        "lightR": 75,
+        "lightCol": "rgba(120,255,140,0.65)",
+        "lightMid": "rgba(70,200,100,0.18)"
+      },
+      {
+        "key": "stool_tray",
+        "x": 282,
+        "y": 168,
+        "h": 34
+      },
+      {
+        "key": "table",
+        "x": 240,
+        "y": 232,
+        "h": 50,
+        "solid": true,
+        "fw": 62,
+        "fh": 22
+      },
+      {
+        "key": "stain_rust",
+        "x": 170,
+        "y": 210,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_cross",
+        "x": 336,
+        "y": 168,
+        "h": 23,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_cross",
+        "x": 396,
+        "y": 248,
+        "h": 23,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "iv_stand",
+        "x": 322,
+        "y": 268,
+        "h": 55
+      },
+      {
+        "key": "gurney",
+        "x": 350,
+        "y": 296,
+        "h": 34,
+        "solid": true,
+        "fw": 30,
+        "fh": 14
+      },
+      {
+        "key": "surgical_lamp",
+        "x": 414,
+        "y": 280,
+        "h": 70,
+        "solid": true,
+        "fw": 26,
+        "fh": 14,
+        "light": true,
+        "lightY": 56,
+        "lightR": 120,
+        "lightCol": "rgba(205,220,235,0.7)",
+        "lightMid": "rgba(170,195,220,0.18)"
+      },
+      {
+        "key": "stain_rust",
+        "x": 390,
+        "y": 322,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "curtain_rail",
+        "x": 520,
+        "y": 132,
+        "h": 64,
+        "solid": true,
+        "fw": 56,
+        "fh": 10,
+        "light": true,
+        "lightY": 30,
+        "lightR": 46,
+        "lightCol": "rgba(120,160,150,0.25)",
+        "lightMid": "rgba(100,140,130,0.08)"
+      },
+      {
+        "key": "medicine_cart",
+        "x": 547,
+        "y": 249,
+        "h": 56,
+        "solid": true,
+        "fw": 26,
+        "fh": 14
+      },
+      {
+        "key": "wheelchair",
+        "x": 562,
+        "y": 338,
+        "h": 42,
+        "solid": true,
+        "fw": 18,
+        "fh": 14
+      },
+      {
+        "key": "floor_drain",
+        "x": 472,
+        "y": 358,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "plant",
+        "x": 516,
+        "y": 369,
+        "h": 56
+      },
+      {
+        "key": "crate",
+        "x": 521,
+        "y": 320,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "stain_rust",
+        "x": 553,
+        "y": 378,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "sink_mirror",
+        "x": 96,
+        "y": 308,
+        "h": 74,
+        "solid": true,
+        "fw": 22,
+        "fh": 12
+      },
+      {
+        "key": "locker_green",
+        "x": 136,
+        "y": 304,
+        "h": 62,
+        "solid": true,
+        "fw": 24,
+        "fh": 12
+      },
+      {
+        "key": "trash_bin",
+        "x": 116,
+        "y": 326,
+        "h": 30
+      },
+      {
+        "key": "plant",
+        "x": 84,
+        "y": 368,
+        "h": 56
+      },
+      {
+        "key": "floor_litter",
+        "x": 226,
+        "y": 378,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 410,
+        "y": 386,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "crate",
+        "x": 546,
+        "y": 216,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "stain_rust",
+        "x": 280,
+        "y": 350,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 300,
+        "y": 212
+      },
+      {
+        "x": 452,
+        "y": 170
+      }
+    ],
+    "tileset": "/static/room/ward",
+    "mood": {
+      "in": "rgb(208,216,220)",
+      "out": "rgb(6,10,12)"
+    },
+    "windowLight": {
+      "col": "rgba(120,200,185,0.5)",
+      "mid": "rgba(90,170,155,0.14)",
+      "r": 78
+    }
+  }
+}

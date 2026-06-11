@@ -1,0 +1,22 @@
+FROM openbmb/minicpm5:latest
+
+# Force NO-THINK. The stock ollama build of openbmb/minicpm5 ships a plain ChatML template
+# with NO enable_thinking logic, so the model always reasons (<think> chains blow up our
+# short structured region calls). Here we pre-fill an empty <think></think> in the assistant
+# turn — exactly what apply_chat_template(enable_thinking=False) does on Hugging Face — so the
+# model skips reasoning and emits the answer directly.
+TEMPLATE """<s>{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+<think>
+
+</think>
+
+"""
+
+PARAMETER stop <|im_end|>
+PARAMETER stop <|endoftext|>
+PARAMETER temperature 0.7
+PARAMETER top_p 0.8

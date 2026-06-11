@@ -1,0 +1,20 @@
+{
+  "name": "Adriana Vasquez",
+  "gender": "female",
+  "age": 32,
+  "title": "the owner of a struggling auto repair shop",
+  "voice": "direct and no-nonsense, with a hint of worn patience",
+  "persona": "A seasoned mechanic with a tough exterior, Adriana has built her reputation on reliability, but struggles to rely on anyone else.",
+  "biography": "Born in the Dominican Republic, Adriana moved to the States as a teenager. She worked multiple jobs to put herself through vocational school and eventually opened her own repair shop in a working-class neighborhood. The shop has become a lifeline for the community, but it's also a constant reminder of the stress she feels every day. Her mother's recent passing left a gaping hole in her life, especially since Adriana was always closer to her than her father.",
+  "fear": "losing control over her business and being unable to provide for herself and those who depend on her",
+  "soft_spot": "Mami",
+  "secret": "Adriana secretly has a degree in automotive engineering from the Dominican Republic's top university, but she feels that revealing it would undermine her working-class identity and jeopardize her relationships with customers.",
+  "appearance": "Adriana is a sturdy woman in her mid-30s, with short black hair, a scattering of freckles across her nose, and a strong jawline. She has a tattoo of a wrench on her left bicep and often wears worn jeans and grease-stained shirts.",
+  "portrait_prompt": "Adriana sits back in her creaky office chair, arms crossed over her chest as she looks directly at the viewer with a hint of defiance and a touch of sadness etched on her face",
+  "sprite_prompt": "a sturdy woman with short black hair, dressed in worn jeans and a grease-stained white shirt, with a wrench tattooed on her left bicep",
+  "slug": "adriana-vasquez",
+  "status": {
+    "portrait": true,
+    "sprite": true
+  }
+}

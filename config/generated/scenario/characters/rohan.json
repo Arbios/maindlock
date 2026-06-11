@@ -1,0 +1,47 @@
+{
+  "name": "Rohan",
+  "persona": "A young man who has been working under Mrs. Patel for two years, struggling to balance his respect for her with his desire to protect his family's interests.",
+  "biography": "Rohan started out as a shop assistant but became an apprentice after showing a knack for restoration work. He's learned much about the shop and its history from Mrs. Patel but feels conflicted about your family's intentions.",
+  "voice": "soft-spoken",
+  "fear": "being torn between loyalty to Mrs. Patel and his own sense of right",
+  "key_holder": false,
+  "key_location": "",
+  "title": "Apprentice",
+  "goal": "the deed to your late grandmother's antique shop",
+  "key_approach": [],
+  "secrets": [
+    {
+      "id": "vague",
+      "topics": [
+        "nalini",
+        "shop",
+        "owner",
+        "and",
+        "widow",
+        "him",
+        "her",
+        "them",
+        "they"
+      ],
+      "min_rapport": 3,
+      "text": "There's something in her past that still gets a reaction out of her, even after all these years."
+    },
+    {
+      "id": "reveal",
+      "topics": [
+        "nalini",
+        "shop",
+        "owner",
+        "and",
+        "widow",
+        "him",
+        "her",
+        "them",
+        "they",
+        "ramesh"
+      ],
+      "min_rapport": 6,
+      "text": "\"You might find it interesting to know how Ramesh's mother used to help us out when my husband was alive.\""
+    }
+  ]
+}

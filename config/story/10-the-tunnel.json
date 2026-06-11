@@ -1,0 +1,242 @@
+{
+  "name": "The Tunnel",
+  "intro": "The tunnel swallows the light. A train lies on its side, still warm, sparks ticking like a clock running down. Beside the switch lever — small, calm, exactly where the headlight would have found her — a dog sits, watching you. On the wall, a chalk diagram: one track, splitting in two.",
+  "holder": {
+    "name": "Tessa",
+    "title": "the dog",
+    "persona": "a small calm dog beside the switch lever; she does not speak, and she is not afraid",
+    "voice": "",
+    "biography": "She was sitting between the rails the night the train came. The headlight found her and the machine did the arithmetic it had been given. She has been waiting in this tunnel ever since — not for forgiveness, which is not a thing dogs deal in, but for you to look.",
+    "fear": "",
+    "goal": "the key",
+    "key_location": "by the lever",
+    "approach": [],
+    "sprite_key": "tessa",
+    "gender": "",
+    "arousal": 0,
+    "scripted": [
+      "The dog doesn't bark. She sits by the switch lever, watching you — tail sweeping the dust, slow as a metronome.",
+      "You know this dog. You have never seen her before in your life, and you know her. She was sitting exactly like this — between the rails, in the headlight, the night your code did the arithmetic.",
+      "She nudges the lever with her nose, then looks back at you. On the wall, the chalk diagram waits: one track splitting into two. Five marks on one branch. One mark on the other. Under it, in your handwriting: MINIMIZE LOSS.",
+      "Tessa lays her head on your boot. The lever clicks. Somewhere far above, a heart monitor changes its mind. The door is open. It always was."
+    ],
+    "secrets": [],
+    "known_people": []
+  },
+  "finale_card": "The train left the rails to spare a dog.\nThe task you solved was the trolley problem.\nIt never had a solution — only a choice,\nand someone left behind to pay for it.\n\nYou wrote the choice down and called it code.\nTessa lived. Daniel didn't. You did.\n\nNow open your eyes.",
+  "layout": {
+    "theme": 0,
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "pipes_wall",
+        "x": 150,
+        "y": 42,
+        "h": 70,
+        "background": true
+      },
+      {
+        "key": "warning_sign",
+        "x": 250,
+        "y": 42,
+        "h": 31,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "whiteboard_task",
+        "x": 367,
+        "y": 237,
+        "h": 46,
+        "solid": true,
+        "fw": 29,
+        "fh": 14,
+        "light": true,
+        "lightR": 70,
+        "lightCol": "rgba(255,240,200,0.35)",
+        "bark": "This was my task..."
+      },
+      {
+        "key": "fuse_box",
+        "x": 556,
+        "y": 88,
+        "h": 35,
+        "background": true,
+        "light": true,
+        "blink": true,
+        "lightY": 85,
+        "lightR": 55,
+        "lightCol": "rgba(120,255,124,0.55)",
+        "lightMid": "rgba(70,200,90,0.16)"
+      },
+      {
+        "key": "rails_segment",
+        "x": 130,
+        "y": 324,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 260,
+        "y": 330,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 376,
+        "y": 331,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 508,
+        "y": 333,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "train_wreck_2",
+        "x": 156,
+        "y": 345,
+        "h": 100,
+        "solid": true,
+        "fw": 130,
+        "fh": 24,
+        "spark": true,
+        "sparkX": -60,
+        "smoke": true,
+        "smokeX": -50,
+        "smokeY": 70
+      },
+      {
+        "key": "railway_lever",
+        "x": 467,
+        "y": 313,
+        "h": 52,
+        "solid": true,
+        "fw": 10,
+        "fh": 12
+      },
+      {
+        "key": "lantern_floor",
+        "x": 504,
+        "y": 300,
+        "h": 56,
+        "light": true,
+        "lightY": 300,
+        "lightR": 130,
+        "lightCol": "rgba(255,210,140,0.55)",
+        "lightMid": "rgba(255,160,80,0.16)"
+      },
+      {
+        "key": "barrel",
+        "x": 100,
+        "y": 140,
+        "h": 48,
+        "solid": true,
+        "fw": 32,
+        "fh": 14
+      },
+      {
+        "key": "stain_rust",
+        "x": 340,
+        "y": 390,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 203,
+        "y": 311,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 430,
+        "y": 230,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 537,
+        "y": 357,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 480,
+        "y": 170,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "rails_segment",
+        "x": 371,
+        "y": 290,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "rails_segment",
+        "x": 509,
+        "y": 288,
+        "h": 26,
+        "floor": true
+      },
+      {
+        "key": "huggingface",
+        "x": 230,
+        "y": 116,
+        "h": 58,
+        "solid": false,
+        "shadow": true,
+        "bark": "Is that a face? Why is it trying to hug me?"
+      },
+      {
+        "key": "nvidia",
+        "x": 432,
+        "y": 123,
+        "h": 80,
+        "solid": false,
+        "shadow": true,
+        "light": true,
+        "blink": true,
+        "spark": true,
+        "lightY": 266,
+        "lightR": 98,
+        "lightCol": "rgba(120,255,124,0.92)",
+        "lightMid": "rgba(55,200,70,0.30)",
+        "bark": "It says Nemotron"
+      }
+    ],
+    "stations": [
+      {
+        "x": 430,
+        "y": 286
+      }
+    ],
+    "tileset": "/static/room/r10",
+    "mood": {
+      "in": "rgb(106,91,78)",
+      "out": "rgb(10,8,7)"
+    },
+    "windowLight": {
+      "col": "rgba(120,150,255,0.55)",
+      "mid": "rgba(105,135,255,0.16)",
+      "r": 78
+    }
+  }
+}

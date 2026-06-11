@@ -1,0 +1,309 @@
+{
+  "name": "The Break Room",
+  "intro": "A break room bright as a dentist's conscience. A water cooler stands empty in the middle of everything, like a monument. A colleague blinks at you, unsurprised — as if you'd only stepped out a minute ago. It has been months.",
+  "holder": {
+    "name": "Pim",
+    "title": "the colleague on break",
+    "persona": "a co-worker becalmed in fluorescent light; narrates the dream he's having, which is you",
+    "voice": "mild, unbothered, slightly off-tempo; states absurd things as plain facts; never finishes his coffee",
+    "biography": "He has been on break for as long as anyone remembers. Everyone talks only about you, and he agrees with all of them, equally, without effort. Mostly he worries about the cooler: it has been empty since that day and nobody changes it, and the bottle is heavier than it looks. He is sure that if the water were changed, something — somewhere — would finally flow again.",
+    "fear": "that the cooler stays empty forever",
+    "goal": "the key",
+    "key_location": "behind the empty cooler bottle",
+    "approach": [
+      "water"
+    ],
+    "sprite_key": "sam",
+    "gender": "male",
+    "portrait": "scripts/flux/out/sam.png",
+    "arousal": 1,
+    "secrets": [
+      {
+        "id": "pim-talk",
+        "topics": [
+          "me",
+          "everyone",
+          "talk",
+          "talking",
+          "say",
+          "news",
+          "what",
+          "did",
+          "about"
+        ],
+        "min_rapport": 2,
+        "text": "Everyone talks only about you. In the kitchen, in the lift, in my dream where the lift is also a kitchen. You were looking for a solution to the task. That's all anyone says. I don't understand your hints, by the way. I'm making them."
+      },
+      {
+        "id": "pim-daniel",
+        "topics": [
+          "water",
+          "cooler",
+          "bottle",
+          "change",
+          "help",
+          "empty",
+          "carry"
+        ],
+        "min_rapport": 5,
+        "text": "...You'd really help me change the water? Huh. Then I'll tell you the thing nobody says out loud. The boy on the platform was called Daniel. Daniel Voss. Where the flowers are — say his name. Names are the only doors that never lock.",
+        "teaches": [
+          "daniel"
+        ]
+      }
+    ],
+    "known_people": [
+      "Bo"
+    ],
+    "yield_line": "The water flows again. Listen: the boy on the platform was Daniel Voss. Where the flowers are, say his name. Not sorry — his name."
+  },
+  "knower": {
+    "name": "Bo",
+    "title": "the night guard",
+    "persona": "a night guard who has decided the break room is the only honest room in the building",
+    "voice": "deadpan, practical, keeps his thumbs in his belt; gives advice like directions",
+    "relation_to_holder": "shares the night shift with him",
+    "sprite_key": "guard",
+    "gender": "male",
+    "secrets": [
+      {
+        "id": "bo-pim",
+        "topics": [
+          "pim",
+          "him",
+          "he",
+          "sleep",
+          "strange",
+          "weird",
+          "cooler",
+          "what",
+          "reach",
+          "how",
+          "help"
+        ],
+        "min_rapport": 2,
+        "text": "Pim's been 'on break' since the day of the crash. Only thing that still reaches him is that cooler. Offer to change the water — I'm not joking. In here, the small kindnesses are the load-bearing ones.",
+        "teaches": [
+          "water"
+        ]
+      },
+      {
+        "id": "bo-building",
+        "topics": [
+          "building",
+          "office",
+          "place",
+          "here",
+          "floor",
+          "room",
+          "where",
+          "real"
+        ],
+        "min_rapport": 4,
+        "text": "You noticed the clock? Same time as the platform, same time as the studio. This whole building runs on one stopped minute. I stopped asking which one. You shouldn't."
+      }
+    ],
+    "known_people": [
+      "Pim"
+    ]
+  },
+  "layout": {
+    "theme": 19,
+    "mood": {
+      "in": "rgb(214,222,226)",
+      "out": "rgb(7,9,10)"
+    },
+    "windowLight": {
+      "col": "rgba(185,225,230,0.5)",
+      "mid": "rgba(140,185,195,0.13)",
+      "r": 70
+    },
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "clock_wall",
+        "x": 248,
+        "y": 42,
+        "h": 29,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "picture",
+        "x": 148,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "wall_vent",
+        "x": 200,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "light": true,
+        "lightY": 50,
+        "lightR": 110,
+        "lightCol": "rgba(210,240,245,0.55)",
+        "lightMid": "rgba(165,205,215,0.15)"
+      },
+      {
+        "key": "wall_vent",
+        "x": 400,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "light": true,
+        "lightY": 50,
+        "lightR": 110,
+        "lightCol": "rgba(210,240,245,0.55)",
+        "lightMid": "rgba(165,205,215,0.15)"
+      },
+      {
+        "key": "window",
+        "x": 470,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "water_cooler",
+        "x": 320,
+        "y": 240,
+        "h": 47,
+        "solid": true,
+        "fw": 10,
+        "fh": 12,
+        "light": true,
+        "lightY": 30,
+        "lightR": 68,
+        "lightCol": "rgba(185,235,242,0.5)",
+        "lightMid": "rgba(140,200,212,0.13)"
+      },
+      {
+        "key": "coffee_machine",
+        "x": 110,
+        "y": 130,
+        "h": 52,
+        "solid": true,
+        "fw": 15,
+        "fh": 12
+      },
+      {
+        "key": "table",
+        "x": 180,
+        "y": 250,
+        "h": 50,
+        "solid": true,
+        "fw": 62,
+        "fh": 22
+      },
+      {
+        "key": "stool",
+        "x": 136,
+        "y": 252,
+        "h": 34
+      },
+      {
+        "key": "stool",
+        "x": 224,
+        "y": 252,
+        "h": 34
+      },
+      {
+        "key": "lockers_row",
+        "x": 520,
+        "y": 130,
+        "h": 53,
+        "solid": true,
+        "fw": 35,
+        "fh": 16
+      },
+      {
+        "key": "locker",
+        "x": 568,
+        "y": 128,
+        "h": 55,
+        "solid": true,
+        "fw": 12,
+        "fh": 12
+      },
+      {
+        "key": "wash_basin",
+        "x": 100,
+        "y": 200,
+        "h": 40,
+        "solid": true,
+        "fw": 15,
+        "fh": 12
+      },
+      {
+        "key": "food_cart",
+        "x": 480,
+        "y": 330,
+        "h": 52,
+        "solid": true,
+        "fw": 19,
+        "fh": 14
+      },
+      {
+        "key": "plant",
+        "x": 100,
+        "y": 360,
+        "h": 56
+      },
+      {
+        "key": "bucket",
+        "x": 560,
+        "y": 360,
+        "h": 40
+      },
+      {
+        "key": "floor_cross",
+        "x": 416,
+        "y": 300,
+        "h": 23,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_drain",
+        "x": 252,
+        "y": 330,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 382,
+        "y": 204,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 152,
+        "y": 312,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 430,
+        "y": 190
+      },
+      {
+        "x": 500,
+        "y": 280
+      }
+    ],
+    "tileset": "/static/room/r08"
+  }
+}

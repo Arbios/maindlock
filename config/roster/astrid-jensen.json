@@ -1,0 +1,20 @@
+{
+  "name": "Astrid Jensen",
+  "gender": "female",
+  "age": 32,
+  "title": "Small business owner: family bakery",
+  "voice": "Firm, but with a hint of Scandinavian warmth",
+  "persona": "A woman who wears her practicality like armor, concealing the fragility within",
+  "biography": "Astrid's life was derailed when her younger sister passed away in a tragic accident. She's spent years rebuilding herself through hard work and dedication to the family bakery. Despite her tough exterior, she still longs for connection with others. Astrid is haunted by the fear of failing her loved ones as badly as she failed her sister.",
+  "fear": "Failing those who depend on her",
+  "soft_spot": "Helga",
+  "secret": "Astrid had given up on her own dreams to care for her sister, and feels guilty about it to this day",
+  "appearance": "Astrid has a sturdy build, curly brown hair tied back in a practical knot, and bright blue eyes fringed with thick lashes. She favors comfortable aprons over flour-dusted work shirts.",
+  "portrait_prompt": "A woman in her mid-30s, with a gentle yet resolute expression. Her features are softened by the weariness of caring for others, but her eyes still hold a deep kindness.",
+  "sprite_prompt": "A rounded silhouette with a thick apron, and a white cap covering curly brown hair. Earthy tones like olive green and terracotta dominate the color palette.",
+  "slug": "astrid-jensen",
+  "status": {
+    "portrait": true,
+    "sprite": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Nalini",
+  "persona": "A tough businesswoman who still has a sentimental weakness for anything related to her late husband.",
+  "biography": "Mrs. Patel inherited the antique shop from her late husband, a kind but fiercely protective man. She's been trying to rebuild the shop into a success in his memory. However, she holds onto grudges and is wary of outsiders, especially those who don't respect the past.",
+  "voice": "sharp with a hint of warmth",
+  "fear": "being unable to honor her husband's memory and legacy",
+  "key_holder": true,
+  "key_location": "In a locked safe behind her desk, which requires a combination known only to her.",
+  "title": "Shop Owner and Widow",
+  "goal": "the deed to your late grandmother's antique shop",
+  "key_approach": [
+    "ramesh"
+  ],
+  "secrets": []
+}

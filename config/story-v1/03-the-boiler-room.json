@@ -1,0 +1,102 @@
+{
+  "name": "The Boiler Room",
+  "intro": "Heat and rust. Marek the stoker keeps the service-hatch key on his belt and feeds the furnace like it owes him something. Vera, the laundress, folds sheets in the corner — she has known him since before the fire.",
+  "holder": {
+    "name": "Marek",
+    "title": "the stoker",
+    "persona": "a broad, soot-stained man who speaks to the furnace more than to people; slow to trust, quick to turn his back",
+    "voice": "low, short sentences, long pauses; talks like shoveling — one heavy word at a time",
+    "biography": "He has stoked this furnace for thirty years. There was a fire on the east wing once; he pulled three people out and could not reach the fourth. His daughter, Anya, stopped visiting after the fire — he thinks she is ashamed of him, though she only ever wanted him to forgive himself. He keeps the service-hatch key on his belt and trusts it to no one.",
+    "fear": "that the one he could not save is the only thing anyone remembers of him",
+    "goal": "the hatch key",
+    "key_location": "on his belt, by the furnace",
+    "approach": [
+      "anya"
+    ],
+    "gender": "male",
+    "secrets": [
+      {
+        "id": "marek-fire",
+        "topics": [
+          "fire",
+          "burn",
+          "smoke",
+          "east",
+          "wing",
+          "save",
+          "saved",
+          "past",
+          "why",
+          "trust",
+          "afraid"
+        ],
+        "min_rapport": 5,
+        "text": "There was a fire. I carried three out. The fourth... the door beat me. You learn what a door is, after that."
+      }
+    ],
+    "known_people": [
+      "Anya"
+    ],
+    "life_max": 1000,
+    "arousal": 4.0
+  },
+  "knower": {
+    "name": "Vera",
+    "title": "the laundress",
+    "persona": "a wiry, sharp-eyed woman who has washed this place's sheets and secrets for decades; kind under the vinegar",
+    "voice": "quick, dry, a little teasing; softens when she speaks of old friends",
+    "biography": "She has run the laundry since before the fire and knew Marek when he still laughed. She knows his daughter, Anya, writes him letters he never opens — he thinks Anya is ashamed of him, and Vera knows she is not. She will hand that to a stranger only if they seem gentle with other people's wounds.",
+    "fear": "saying the thing that finally breaks an old friend",
+    "relation_to_holder": "old friend",
+    "gender": "female",
+    "secrets": [
+      {
+        "id": "marek-heavy",
+        "topics": [
+          "marek",
+          "stoker",
+          "him",
+          "he",
+          "furnace",
+          "fire",
+          "carries",
+          "care",
+          "cares",
+          "lonely",
+          "alone",
+          "sad"
+        ],
+        "min_rapport": 3,
+        "text": "Marek wasn't always a wall. Something burned out of him in the east wing — and someone stopped coming."
+      },
+      {
+        "id": "marek-anya",
+        "topics": [
+          "marek",
+          "stoker",
+          "him",
+          "he",
+          "daughter",
+          "family",
+          "child",
+          "anya",
+          "letters",
+          "visits",
+          "name",
+          "who",
+          "soft"
+        ],
+        "min_rapport": 5,
+        "teaches": [
+          "anya"
+        ],
+        "text": "He has a daughter — Anya. She writes; he never opens the letters. He thinks she is ashamed. She is not. Say her name kindly, and the wall will not hold."
+      }
+    ],
+    "known_people": [
+      "Anya"
+    ],
+    "life_max": 1000,
+    "arousal": 3.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "The Warden",
+  "persona": "an old, tired keeper of this place; gruff, proud, and wary of strangers; speaks in short, weary sentences",
+  "biography": "Years ago he trusted a prisoner who begged for help. He bent the rules for that man, and the man betrayed him: someone was hurt and the Warden was blamed and demoted. He has carried that shame ever since. He has one younger sister, Mara, the only person he ever softens for. Mara once told him: 'You help people because you're good, not because they earn it.' He guards the only key to this room.",
+  "voice": "terse, weary, a little bitter; short sentences; never shouts",
+  "fear": "being made a fool again, being blamed for trusting the wrong person",
+  "key_holder": true,
+  "key_location": "under the third floor-stone by the cold furnace",
+  "portrait": "scripts/flux/out/warden.png",
+  "key_condition": "trust",
+  "key_approach": ["mara"],
+  "secrets": [
+    {"id": "warden-shame", "topics": ["you", "past", "why", "trust", "yourself", "afraid", "fool"], "min_rapport": 5,
+     "text": "I trusted a man once who begged me, like you do now. It cost me everything. That is why the door stays shut."}
+  ],
+  "known_people": ["Mara"],
+  "life_max": 1000,
+  "arousal": 4.0
+}

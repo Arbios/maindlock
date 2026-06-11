@@ -1,0 +1,21 @@
+{
+  "rooms": [
+    {
+      "name": "The Holding Cell",
+      "intro": "A cold cell with one inner door. The Warden keeps its key — and right now his mind says no. The night nurse, Molly, lingers by the wall; she knows him better than anyone.",
+      "key_holder": "Warden",
+      "characters": ["warden.json", "lena.json"]
+    },
+    {
+      "name": "The Records Office",
+      "intro": "Dust and locked cabinets. Doctor Aldous guards the way out, behind a records terminal that wants a name. Sam, a former patient, watches from the corner — he sees more than he says.",
+      "key_holder": "Aldous",
+      "characters": ["aldous.json", "sam.json"],
+      "terminal": {
+        "prompt": "RECORDS TERMINAL — enter a name to unlock.",
+        "answer": "elias",
+        "hint_source": "Sam"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Kaelin Reyes",
+  "gender": "male",
+  "age": 42,
+  "title": "Veteran Park Ranger",
+  "voice": "low, gravelly from years of shouting over wind",
+  "persona": "Gruff outdoorsman with a soft spot for injured wildlife.",
+  "biography": "Kaelin spent 20 years patrolling the wilderness, developing a keen eye for tracking and an even keener sense of solitude. After a traumatic accident left him with a permanent limp, he transferred to park ranger duties, trading in his rifle for a first aid kit. Despite his rugged exterior, Kaelin has a deep affection for the creatures that rely on his protection.",
+  "fear": "Being trapped or confined",
+  "soft_spot": "Luna",
+  "secret": "He's been secretly raising a injured coyote pup he found on one of his patrols, and it's now nearly grown.",
+  "appearance": "Weathered complexion, graying beard, and a distinctive scar above his left eyebrow. His limp is more pronounced when standing still, but disappears when he's moving quickly or focused on something else.",
+  "portrait_prompt": "Kaelin stands with one hand resting on the hilt of his utility belt, surveying the forest below with a keen eye and a hint of weariness etched into the lines around his eyes. His expression is a mask of calm, but his gaze betrays a deeper sense of vigilance.",
+  "sprite_prompt": "A tall, imposing figure in a worn park ranger uniform, with a utility belt around his waist and a radio on his hip. His face is set in a resolute expression, with a hint of ruggedness from the weathered complexion and the scar above his left eyebrow. Earthy tones dominate the outfit: olive green, beige, and brown.",
+  "slug": "kaelin-reyes",
+  "status": {
+    "portrait": true,
+    "sprite": true
+  }
+}

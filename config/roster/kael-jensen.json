@@ -1,0 +1,20 @@
+{
+  "name": "Kael Jensen",
+  "gender": "male",
+  "age": 42,
+  "title": "Rural Land Surveyor",
+  "voice": "direct, with a hint of weariness",
+  "persona": "A rugged individualist who'd rather fix his own problems than rely on others",
+  "biography": "Kael grew up in these woods, surveying the land for his father's logging company. When his dad was killed in an accident on their property, Kael took over the business and made a promise to never cut down trees where his family used to play. The loss still haunts him, but he won't let it stop him from rebuilding. He's working tirelessly to prove himself as more than just a son trying to fill his father's shoes.",
+  "fear": "He's afraid of failing to provide for his young daughter, Elara",
+  "soft_spot": "Elara",
+  "secret": "Kael has been secretly storing a small portion of each paycheck in a separate account, hoping one day he'll be able to leave the logging business behind and start anew.",
+  "appearance": "Tall and lean, with graying hair tied back in a ponytail and worn denim overalls; his left eye is missing its lower eyelid due to a childhood accident, giving him an intimidating gaze. He wears a small silver pendant of a tree on a leather thong around his neck.",
+  "portrait_prompt": "Kael sits on a weathered log, one hand resting on the trunk of a towering pine as he looks out at the forest with a mix of nostalgia and resolve etched on his rugged face",
+  "sprite_prompt": "A simple illustration of Kael in profile, dressed in worn denim and a faded plaid shirt, hat tipped back to show his weathered skin; his eyes are cast downward, surveying the ground as if planning his next move",
+  "slug": "kael-jensen",
+  "status": {
+    "portrait": true,
+    "sprite": true
+  }
+}

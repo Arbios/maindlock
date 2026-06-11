@@ -1,0 +1,318 @@
+{
+  "name": "The Open Floor",
+  "intro": "Daylight through tall windows, desks in ranks, a whiteboard nobody has touched in months. A man spots you across the floor and smiles the way a knife smiles.",
+  "holder": {
+    "name": "Dorian",
+    "title": "the rival",
+    "persona": "a brilliant, bitter colleague who keeps score; every compliment is a rematch",
+    "voice": "fast, sharp, interrupts; jokes that aren't jokes; technical words as weapons",
+    "biography": "Hired the same week as you; matched you commit for commit for three years and counted every one. When the rail contract came down, he refused the task — first, and loudly — then watched it crown you the chosen one. He tells himself refusing was the win. He checks your old commits at night the way other people check an ex's photographs.",
+    "fear": "that refusing the task was cowardice wearing principle's clothes",
+    "goal": "the key",
+    "key_location": "taped under his keyboard",
+    "approach": [
+      "trains"
+    ],
+    "sprite_key": "julian-reyes",
+    "gender": "male",
+    "portrait": "src/mindlock/game/static/sprites/npc/julian-reyes/portrait.png",
+    "arousal": 5,
+    "secrets": [
+      {
+        "id": "dorian-envy",
+        "topics": [
+          "best",
+          "better",
+          "rival",
+          "win",
+          "beat",
+          "smart",
+          "jealous",
+          "amygdala",
+          "programmer",
+          "think"
+        ],
+        "min_rapport": 3,
+        "text": "You think you're the better programmer? Your amygdala has eclipsed your reason. ...That was a joke. Mostly. Look it up when you wake — it's the part that panics first and thinks later. You'd know it anywhere."
+      },
+      {
+        "id": "dorian-task",
+        "topics": [
+          "task",
+          "project",
+          "refused",
+          "contract",
+          "assignment",
+          "work",
+          "trains",
+          "code",
+          "rail",
+          "chosen"
+        ],
+        "min_rapport": 5,
+        "text": "They handed you the task every one of us refused. I refused first — and I don't regret it. The whole floor heard your name on the news after. Merrick. Adam Merrick. Ring any bells, champ?",
+        "teaches": [
+          "merrick"
+        ]
+      }
+    ],
+    "known_people": [
+      "Pia"
+    ],
+    "yield_line": "Take it, Merrick. Adam Merrick — that's the name the news kept saying. Go ask the cameras why they know your name better than you do."
+  },
+  "knower": {
+    "name": "Pia",
+    "title": "the intern",
+    "persona": "an intern who sees everything from the cheap desk by the printer and is too junior to be lied to carefully",
+    "voice": "quick, candid, slightly conspiratorial; glances over her shoulder mid-sentence",
+    "relation_to_holder": "his intern",
+    "sprite_key": "clerk",
+    "gender": "female",
+    "secrets": [
+      {
+        "id": "pia-rival",
+        "topics": [
+          "dorian",
+          "him",
+          "he",
+          "angry",
+          "rival",
+          "hate",
+          "why",
+          "refused",
+          "bitter"
+        ],
+        "min_rapport": 2,
+        "text": "Whatever he tells you — he didn't refuse the task because it was beneath him. He refused it because it scared him. Then it didn't scare you, and that's what he can't forgive."
+      },
+      {
+        "id": "pia-trains",
+        "topics": [
+          "task",
+          "whiteboard",
+          "board",
+          "diagram",
+          "fork",
+          "drawing",
+          "tracks",
+          "what",
+          "desk",
+          "split"
+        ],
+        "min_rapport": 4,
+        "text": "The whiteboard by your old desk — nobody dares wipe it. One track splitting into two, five marks on one branch, one on the other. Ask him about the trains. It's the only subject he answers honestly.",
+        "teaches": [
+          "trains"
+        ]
+      }
+    ],
+    "known_people": [
+      "Dorian"
+    ]
+  },
+  "layout": {
+    "theme": 20,
+    "mood": {
+      "in": "rgb(138,150,185)",
+      "out": "rgb(8,10,16)"
+    },
+    "windowLight": {
+      "col": "rgba(140,180,255,0.30)",
+      "mid": "rgba(100,140,220,0.10)",
+      "r": 70
+    },
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "window",
+        "x": 140,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "lamp_hanging",
+        "x": 330,
+        "y": 150,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 50,
+        "lightR": 135,
+        "lightCol": "rgba(205,225,255,0.7)",
+        "lightMid": "rgba(160,195,240,0.18)"
+      },
+      {
+        "key": "clock_wall",
+        "x": 250,
+        "y": 42,
+        "h": 29,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "whiteboard_task",
+        "x": 430,
+        "y": 80,
+        "h": 46,
+        "solid": true,
+        "fw": 29,
+        "fh": 14,
+        "light": true,
+        "lightY": 30,
+        "lightR": 88,
+        "lightCol": "rgba(195,215,245,0.55)",
+        "lightMid": "rgba(150,180,225,0.15)"
+      },
+      {
+        "key": "window",
+        "x": 520,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "server_rack",
+        "x": 92,
+        "y": 130,
+        "h": 69,
+        "solid": true,
+        "fw": 14,
+        "fh": 14,
+        "light": true,
+        "blink": true,
+        "lightR": 60,
+        "lightCol": "rgba(120,255,124,0.6)"
+      },
+      {
+        "key": "dev_workstation",
+        "x": 180,
+        "y": 200,
+        "h": 34,
+        "solid": true,
+        "fw": 36,
+        "fh": 16,
+        "light": true,
+        "lightR": 110,
+        "lightCol": "rgba(150,200,255,0.7)",
+        "lightMid": "rgba(100,150,255,0.2)"
+      },
+      {
+        "key": "office_chair",
+        "x": 180,
+        "y": 225,
+        "h": 34
+      },
+      {
+        "key": "dev_workstation",
+        "x": 470,
+        "y": 200,
+        "h": 34,
+        "solid": true,
+        "fw": 36,
+        "fh": 16,
+        "light": true,
+        "lightR": 110,
+        "lightCol": "rgba(150,200,255,0.7)",
+        "lightMid": "rgba(100,150,255,0.2)"
+      },
+      {
+        "key": "office_chair",
+        "x": 470,
+        "y": 225,
+        "h": 34
+      },
+      {
+        "key": "computer_desk",
+        "x": 180,
+        "y": 310,
+        "h": 53,
+        "solid": true,
+        "fw": 37,
+        "fh": 18,
+        "light": true,
+        "lightR": 100,
+        "lightCol": "rgba(120,255,190,0.7)",
+        "lightMid": "rgba(70,210,160,0.2)",
+        "bark": "My desk. The chair is still set to my height. The J key is worn smooth — whoever I was, I typed."
+      },
+      {
+        "key": "office_chair",
+        "x": 180,
+        "y": 336,
+        "h": 34
+      },
+      {
+        "key": "filing_cabinet",
+        "x": 560,
+        "y": 130,
+        "h": 52,
+        "solid": true,
+        "fw": 18,
+        "fh": 14
+      },
+      {
+        "key": "coffee_machine",
+        "x": 100,
+        "y": 350,
+        "h": 52,
+        "solid": true,
+        "fw": 15,
+        "fh": 12
+      },
+      {
+        "key": "water_cooler",
+        "x": 545,
+        "y": 300,
+        "h": 47,
+        "solid": true,
+        "fw": 10,
+        "fh": 12
+      },
+      {
+        "key": "plant",
+        "x": 560,
+        "y": 360,
+        "h": 56
+      },
+      {
+        "key": "stain_rust",
+        "x": 300,
+        "y": 175,
+        "h": 18
+      },
+      {
+        "key": "floor_litter",
+        "x": 250,
+        "y": 272,
+        "h": 18
+      },
+      {
+        "key": "floor_litter",
+        "x": 515,
+        "y": 300,
+        "h": 18
+      },
+      {
+        "key": "stain_rust",
+        "x": 425,
+        "y": 372,
+        "h": 18
+      }
+    ],
+    "stations": [
+      {
+        "x": 420,
+        "y": 235
+      },
+      {
+        "x": 245,
+        "y": 320
+      }
+    ],
+    "tileset": "/static/room/r04"
+  }
+}

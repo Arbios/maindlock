@@ -1,0 +1,21 @@
+{
+  "name": "Molly",
+  "title": "the night nurse",
+  "persona": "a tired night nurse who has seen too much; kind but guarded; speaks softly and watches your eyes",
+  "biography": "She has worked these wards twenty years. She lost a young patient she could not save and has never forgiven herself; she cannot abide people who are careless with other people's lives. She knows the Warden better than anyone — knows he has a younger sister, Mara, the one person he ever softens for. She will share that only if she believes you are not cruel.",
+  "voice": "soft, watchful, weary; gentle but firm; never raises her voice",
+  "fear": "watching someone be hurt again by another person's carelessness",
+  "key_holder": false,
+  "key_location": "",
+  "portrait": "scripts/flux/out/lena.png",
+  "secrets": [
+    {"id": "warden-cares", "topics": ["warden", "keeper", "guard", "old man", "him", "he", "stone", "closed", "cares", "care", "about", "feel", "lonely", "alone"], "min_rapport": 3,
+     "text": "He acts like stone, but he carries something heavy — worries over someone, I think."},
+    {"id": "warden-mara", "topics": ["warden", "keeper", "him", "he", "sister", "mara", "family", "soft", "care", "cares", "love", "name", "who"], "min_rapport": 5,
+     "teaches": ["mara"],
+     "text": "He has a younger sister, Mara. She is the only softness left in him — reach her, and you reach him."}
+  ],
+  "known_people": ["Mara"],
+  "life_max": 1000,
+  "arousal": 3.0
+}

@@ -1,0 +1,412 @@
+{
+  "name": "The Living Room",
+  "intro": "A fire mutters in the grate. A rocking chair, photographs on the wall, the smell of bread no oven baked. A woman looks up from her mending — and her face does something your chest understands before you do.",
+  "holder": {
+    "name": "Maren",
+    "title": "your mother",
+    "persona": "a mother who has turned waiting into a craft; warm, steady, frightened only for you",
+    "voice": "warm, even, unhurried; calls you 'love' and 'son'; her worry hides inside practical sentences",
+    "biography": "She raised a quiet boy who took machines apart on this very rug, asking how they decide. She has kept the fire lit and the photographs straight ever since, because keeping is what she has left. Since that day her husband stands in the hallway and cannot speak, and she carries the house for both of them.",
+    "fear": "that her son will not find the way back",
+    "goal": "the key",
+    "key_location": "in the sewing box by the rocking chair",
+    "approach": [
+      "home"
+    ],
+    "sprite_key": "matron",
+    "gender": "female",
+    "arousal": 2,
+    "secrets": [
+      {
+        "id": "maren-son",
+        "topics": [
+          "son",
+          "mother",
+          "mom",
+          "who",
+          "me",
+          "name",
+          "know",
+          "remember",
+          "boy",
+          "child"
+        ],
+        "min_rapport": 3,
+        "text": "You used to sit by that fire taking the radio apart, asking how it thought. You always had to know how things decide, love. Even before you had the words for it."
+      },
+      {
+        "id": "maren-father",
+        "topics": [
+          "father",
+          "dad",
+          "him",
+          "quiet",
+          "silent",
+          "sorry",
+          "day",
+          "wait",
+          "hallway",
+          "husband"
+        ],
+        "min_rapport": 5,
+        "text": "Go and talk to your father. He has been silent since that day — not because he feels nothing, but because he feels one word and cannot lift it. Say sorry to him first. He will know which of you it belongs to.",
+        "teaches": [
+          "sorry"
+        ]
+      }
+    ],
+    "known_people": [
+      "Nan",
+      "Edwin"
+    ],
+    "yield_line": "Find the way back, son. And talk to your father before you go on — he has been silent since that day. Whatever you find out there, say sorry to him first."
+  },
+  "knower": {
+    "name": "Nan",
+    "title": "the housekeeper",
+    "persona": "a housekeeper of thirty years who dusts the photographs daily and misses nothing",
+    "voice": "brisk, fond, gossips in a whisper even when no one else is home",
+    "relation_to_holder": "kept this house for thirty years",
+    "sprite_key": "charwoman",
+    "gender": "female",
+    "secrets": [
+      {
+        "id": "nan-home",
+        "topics": [
+          "home",
+          "house",
+          "room",
+          "fire",
+          "place",
+          "warm",
+          "her",
+          "mother",
+          "reach",
+          "help",
+          "how"
+        ],
+        "min_rapport": 2,
+        "text": "If you want to reach her, tell her this is home. She keeps that word like a key under the mat. Thirty years and I've never seen it fail.",
+        "teaches": [
+          "home"
+        ]
+      },
+      {
+        "id": "nan-photos",
+        "topics": [
+          "photo",
+          "photos",
+          "picture",
+          "pictures",
+          "wall",
+          "boy",
+          "child",
+          "trains",
+          "toy"
+        ],
+        "min_rapport": 4,
+        "text": "Every photograph on that wall has the boy and the trains. Toy rails round the tree, every winter without fail. Some loves start small and grow teeth, I always said."
+      }
+    ],
+    "known_people": [
+      "Maren",
+      "Edwin"
+    ]
+  },
+  "layout": {
+    "theme": 0,
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "sconce",
+        "x": 122,
+        "y": 44,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 26,
+        "lightR": 62,
+        "lightCol": "rgba(255,190,120,0.3)",
+        "lightMid": "rgba(255,160,90,0.08)"
+      },
+      {
+        "key": "family_photos",
+        "x": 165,
+        "y": 30,
+        "h": 20,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "picture",
+        "x": 220,
+        "y": 42,
+        "h": 34,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "family_photos",
+        "x": 268,
+        "y": 30,
+        "h": 20,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "sconce",
+        "x": 410,
+        "y": 44,
+        "h": 44,
+        "background": true,
+        "light": true,
+        "lightY": 26,
+        "lightR": 62,
+        "lightCol": "rgba(255,190,120,0.3)",
+        "lightMid": "rgba(255,160,90,0.08)"
+      },
+      {
+        "key": "window",
+        "x": 470,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "shelf",
+        "x": 545,
+        "y": 44,
+        "h": 42,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "fireplace",
+        "x": 565,
+        "y": 198,
+        "h": 60,
+        "solid": true,
+        "fw": 26,
+        "fh": 16,
+        "light": true,
+        "lightR": 285,
+        "lightCol": "rgba(255,160,70,1)",
+        "lightMid": "rgba(255,130,50,0.44)"
+      },
+      {
+        "key": "rocking_chair",
+        "x": 528,
+        "y": 245,
+        "h": 48,
+        "solid": true,
+        "fw": 20,
+        "fh": 14
+      },
+      {
+        "key": "sewing_machine",
+        "x": 568,
+        "y": 282,
+        "h": 40,
+        "solid": true,
+        "fw": 19,
+        "fh": 14
+      },
+      {
+        "key": "rug",
+        "x": 320,
+        "y": 240,
+        "h": 104,
+        "floor": true
+      },
+      {
+        "key": "armchair_worn",
+        "x": 250,
+        "y": 200,
+        "h": 43,
+        "solid": true,
+        "fw": 20,
+        "fh": 14
+      },
+      {
+        "key": "table",
+        "x": 330,
+        "y": 250,
+        "h": 50,
+        "solid": true,
+        "fw": 62,
+        "fh": 22
+      },
+      {
+        "key": "radio_old",
+        "x": 332,
+        "y": 226,
+        "h": 34,
+        "solid": false,
+        "shadow": false,
+        "sortY": 252,
+        "light": true,
+        "lightR": 55,
+        "lightCol": "rgba(255,195,115,0.5)",
+        "lightMid": "rgba(255,150,75,0.14)"
+      },
+      {
+        "key": "piano_old",
+        "x": 110,
+        "y": 140,
+        "h": 56,
+        "solid": true,
+        "fw": 40,
+        "fh": 16
+      },
+      {
+        "key": "grandfather_clock",
+        "x": 90,
+        "y": 280,
+        "h": 80,
+        "solid": true,
+        "fw": 14,
+        "fh": 12
+      },
+      {
+        "key": "lantern_floor",
+        "x": 148,
+        "y": 230,
+        "h": 56,
+        "light": true,
+        "lightY": 214,
+        "lightR": 105,
+        "lightCol": "rgba(255,185,105,0.4)",
+        "lightMid": "rgba(255,150,75,0.11)"
+      },
+      {
+        "key": "plant",
+        "x": 560,
+        "y": 388,
+        "h": 56
+      },
+      {
+        "key": "candle",
+        "x": 388,
+        "y": 232,
+        "h": 30,
+        "shadow": false,
+        "sortY": 254,
+        "light": true,
+        "lightR": 85,
+        "lightCol": "rgba(255,201,120,0.65)",
+        "lightMid": "rgba(255,150,70,0.22)",
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "sofa_torn",
+        "x": 180,
+        "y": 350,
+        "h": 28,
+        "solid": true,
+        "fw": 35,
+        "fh": 14
+      },
+      {
+        "key": "dog",
+        "x": 548,
+        "y": 331,
+        "h": 34
+      },
+      {
+        "key": "stain_rust",
+        "x": 463,
+        "y": 365,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 240,
+        "y": 322,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 452,
+        "y": 198,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 140,
+        "y": 332,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 566,
+        "y": 236,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 250,
+        "y": 268,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 378,
+        "y": 272,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "stain_rust",
+        "x": 330,
+        "y": 300,
+        "h": 22,
+        "floor": true,
+        "shadow": false
+      },
+      {
+        "key": "floor_litter",
+        "x": 312,
+        "y": 135,
+        "h": 18,
+        "floor": true,
+        "shadow": false
+      }
+    ],
+    "stations": [
+      {
+        "x": 478,
+        "y": 295
+      },
+      {
+        "x": 200,
+        "y": 280
+      }
+    ],
+    "tileset": "/static/room/r02",
+    "mood": {
+      "in": "rgb(224,170,116)",
+      "out": "rgb(38,25,15)"
+    },
+    "windowLight": {
+      "col": "rgba(150,185,225,0.5)",
+      "mid": "rgba(110,145,185,0.13)",
+      "r": 70
+    }
+  }
+}

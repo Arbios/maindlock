@@ -1,0 +1,20 @@
+{
+  "name": "Julian Reyes",
+  "gender": "male",
+  "age": 35,
+  "title": "the park ranger",
+  "voice": "direct and low-key sarcastic",
+  "persona": "a seasoned outdoorsman with a deep respect for nature, but a troubled past",
+  "biography": "Julian spent his youth on the streets of Los Angeles before finding solace in conservation work. He's haunted by the memories of those early days, especially the loss of his younger brother, who died on their city-block jungle gym when Julian was just ten. Despite this, he still holds onto the scrapbook he made with his brother before he passed away.",
+  "fear": "losing control over something as fragile and unpredictable as nature",
+  "soft_spot": "Carlos",
+  "secret": "he's been in hiding for years to escape his family's violent past",
+  "appearance": "tall, lean build with unruly dark hair and a scattering of stubble; worn flannel shirt, rugged uniform pants, and scuffed up boots",
+  "portrait_prompt": "a man in mid-30s with weathered features, wearing a worn park ranger uniform and holding a large leather journal; his eyes are narrowed against the sun but hold a deep concern for something just out of frame",
+  "sprite_prompt": "tall figure in earthy tones: olive green shirt, beige pants, and scuffed up boots, with dark hair and a scruffy beard",
+  "slug": "julian-reyes",
+  "status": {
+    "portrait": true,
+    "sprite": true
+  }
+}

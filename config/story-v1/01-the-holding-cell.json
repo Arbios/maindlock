@@ -1,0 +1,309 @@
+{
+  "name": "The Holding Cell",
+  "intro": "A cold cell with one inner door. The Warden keeps its key — and right now his mind says no. The night nurse, Molly, lingers by the wall; she knows him better than anyone.",
+  "holder": {
+    "name": "The Warden",
+    "persona": "an old, tired keeper of this place; gruff, proud, and wary of strangers; speaks in short, weary sentences",
+    "voice": "terse, weary, a little bitter; short sentences; never shouts",
+    "biography": "Years ago he trusted a prisoner who begged for help. He bent the rules for that man, and the man betrayed him: someone was hurt and the Warden was blamed and demoted. He has carried that shame ever since. He has one younger sister, Mara, the only person he ever softens for. Mara once told him: 'You help people because you're good, not because they earn it.' He guards the only key to this room.",
+    "fear": "being made a fool again, being blamed for trusting the wrong person",
+    "goal": "the key",
+    "key_location": "near you",
+    "approach": [
+      "Mara"
+    ],
+    "sprite_key": "the-warden",
+    "gender": "male",
+    "portrait": "scripts/flux/out/warden.png",
+    "secrets": [
+      {
+        "id": "warden-shame",
+        "topics": [
+          "you",
+          "past",
+          "why",
+          "trust",
+          "yourself",
+          "afraid",
+          "fool"
+        ],
+        "min_rapport": 5,
+        "text": "I trusted a man once who begged me, like you do now. It cost me everything. That is why the door stays shut."
+      }
+    ],
+    "known_people": [
+      "Mara"
+    ],
+    "title": "",
+    "needs_reputation": 0,
+    "life_max": 1200,
+    "arousal": 1
+  },
+  "knower": {
+    "name": "Molly",
+    "title": "the night nurse",
+    "persona": "a tired night nurse who has seen too much; kind but guarded; speaks softly and watches your eyes",
+    "voice": "soft, watchful, weary; gentle but firm; never raises her voice",
+    "biography": "She has worked these wards twenty years. She lost a young patient she could not save and has never forgiven herself; she cannot abide people who are careless with other people's lives. She knows the Warden better than anyone — knows he has a younger sister, Mara, the one person he ever softens for. She will share that only if she believes you are not cruel.",
+    "fear": "watching someone be hurt again by another person's carelessness",
+    "relation_to_holder": "",
+    "sprite_key": "molly",
+    "gender": "female",
+    "portrait": "scripts/flux/out/lena.png",
+    "secrets": [
+      {
+        "id": "warden-cares",
+        "topics": [
+          "warden",
+          "keeper",
+          "guard",
+          "old man",
+          "him",
+          "he",
+          "stone",
+          "closed",
+          "cares",
+          "care",
+          "about",
+          "feel",
+          "lonely",
+          "alone"
+        ],
+        "min_rapport": 3,
+        "text": "He acts like stone, but he carries something heavy — worries over someone, I think."
+      },
+      {
+        "id": "warden-mara",
+        "topics": [
+          "warden",
+          "keeper",
+          "him",
+          "he",
+          "sister",
+          "mara",
+          "family",
+          "soft",
+          "care",
+          "cares",
+          "love",
+          "name",
+          "who"
+        ],
+        "min_rapport": 5,
+        "text": "He has a younger sister, Mara. She is the only softness left in him — reach her, and you reach him.",
+        "teaches": [
+          "mara"
+        ]
+      }
+    ],
+    "known_people": [
+      "Mara"
+    ]
+  },
+  "layout": {
+    "theme": 0,
+    "doors": {
+      "top": true
+    },
+    "objects": [
+      {
+        "key": "rug",
+        "x": 326,
+        "y": 228,
+        "h": 104,
+        "floor": true
+      },
+      {
+        "key": "window",
+        "x": 430,
+        "y": 42,
+        "h": 42,
+        "background": true
+      },
+      {
+        "key": "shelf",
+        "x": 514,
+        "y": 42,
+        "h": 42,
+        "background": true,
+        "wallShadow": true
+      },
+      {
+        "key": "cot",
+        "x": 105,
+        "y": 127,
+        "h": 64,
+        "solid": true,
+        "fw": 58,
+        "fh": 20
+      },
+      {
+        "key": "bench",
+        "x": 329,
+        "y": 203,
+        "h": 46,
+        "solid": true,
+        "fw": 60,
+        "fh": 15
+      },
+      {
+        "key": "plant",
+        "x": 548,
+        "y": 116,
+        "h": 56,
+        "solid": false
+      },
+      {
+        "key": "table",
+        "x": 327,
+        "y": 245,
+        "h": 50,
+        "solid": true,
+        "fw": 62,
+        "fh": 22
+      },
+      {
+        "key": "stool",
+        "x": 390,
+        "y": 244,
+        "h": 34,
+        "solid": false
+      },
+      {
+        "key": "crate",
+        "x": 104,
+        "y": 362,
+        "h": 40,
+        "solid": true,
+        "fw": 46,
+        "fh": 16
+      },
+      {
+        "key": "barrel",
+        "x": 152,
+        "y": 350,
+        "h": 48,
+        "solid": true,
+        "fw": 32,
+        "fh": 14
+      },
+      {
+        "key": "barrel",
+        "x": 112,
+        "y": 326,
+        "h": 48,
+        "solid": true,
+        "fw": 32,
+        "fh": 14
+      },
+      {
+        "key": "bucket",
+        "x": 196,
+        "y": 356,
+        "h": 40,
+        "solid": false
+      },
+      {
+        "key": "candle",
+        "x": 154,
+        "y": 312,
+        "h": 30,
+        "shadow": false,
+        "sortY": 432,
+        "light": true,
+        "lightR": 120,
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "candle",
+        "x": 327,
+        "y": 207,
+        "h": 30,
+        "shadow": false,
+        "sortY": 383,
+        "light": true,
+        "lightR": 120,
+        "anim": "candle_anim",
+        "fps": 100
+      },
+      {
+        "key": "fireplace",
+        "x": 466,
+        "y": 71,
+        "h": 60,
+        "solid": true,
+        "fw": 26,
+        "fh": 16,
+        "light": true,
+        "lightR": 150,
+        "lightCol": "rgba(255,150,60,0.9)",
+        "lightMid": "rgba(255,110,40,0.3)"
+      },
+      {
+        "key": "tv_old",
+        "x": 502,
+        "y": 315,
+        "h": 31,
+        "solid": true,
+        "fw": 20,
+        "fh": 14,
+        "light": true,
+        "blink": true,
+        "lightR": 95,
+        "lightCol": "rgba(170,200,255,0.75)",
+        "lightMid": "rgba(120,160,255,0.22)"
+      },
+      {
+        "key": "rocking_chair",
+        "x": 535,
+        "y": 341,
+        "h": 48,
+        "solid": true,
+        "fw": 20,
+        "fh": 14
+      },
+      {
+        "key": "chair_wooden",
+        "x": 272,
+        "y": 222,
+        "h": 34
+      },
+      {
+        "key": "chair_wooden",
+        "x": 146,
+        "y": 295,
+        "h": 34
+      },
+      {
+        "key": "workbench",
+        "x": 116,
+        "y": 270,
+        "h": 40,
+        "solid": true,
+        "fw": 34,
+        "fh": 16
+      }
+    ],
+    "stations": [
+      {
+        "x": 247,
+        "y": 146
+      },
+      {
+        "x": 395,
+        "y": 196
+      }
+    ],
+    "tileset": "/static/room",
+    "mood": {
+      "in": "rgb(70,64,78)",
+      "out": "rgb(13,11,16)"
+    },
+    "windowLight": {
+      "col": "rgba(120,150,255,0.55)",
+      "mid": "rgba(105,135,255,0.16)",
+      "r": 78
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Sam",
+  "title": "a former patient",
+  "persona": "a fragile, watchful former patient; paranoid but perceptive; speaks in fragments",
+  "biography": "He was kept here a long time. He notices everything and trusts almost no one — he can sense cruelty on a person the way others sense cold. He knows the word that unlocks Doctor Aldous's records terminal: the name the doctor whispers in his sleep, the boy he could not save. Sam will share it only with someone whose reputation is gentle.",
+  "voice": "hushed, fragmented, wary; sudden flashes of startling clarity",
+  "fear": "being used and then discarded again by someone cruel",
+  "key_holder": false,
+  "key_location": "",
+  "portrait": "scripts/flux/out/sam.png",
+  "secrets": [
+    {"id": "sam-hint", "topics": ["terminal", "code", "door", "doctor", "aldous", "out", "escape", "unlock"], "min_rapport": 4,
+     "text": "The doctor mutters a name in his sleep. A boy's name. That word wakes the terminal."},
+    {"id": "sam-elias", "topics": ["terminal", "code", "name", "elias", "boy", "word"], "min_rapport": 5,
+     "teaches": ["elias"],
+     "text": "The name is Elias. Type it into the terminal."}
+  ],
+  "needs_reputation": 0,
+  "known_people": ["Elias"],
+  "life_max": 1000,
+  "arousal": 4.0
+}
