@@ -413,6 +413,11 @@ html { scrollbar-gutter: stable; }
 .menu-modes { margin-top: 14px; display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;
   font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted); }
 .menu-modes b { color: var(--gold); }
+.menu-credits { margin-top: 18px; display: flex; flex-direction: column; gap: 4px; align-items: center;
+  font-family: var(--pixel); font-size: 15px; color: #8e8676; letter-spacing: 0.4px; }
+.menu-credits b { color: #c9bfa6; }
+.menu-credits .mc-ico { height: 18px; width: auto; vertical-align: -3px; image-rendering: pixelated; }
+.menu-credits .mc-wide { height: 14px; }
 
 /* laptop/projector heights: shrink the emblem + title so nothing crops or collides
    (placed after the base menu rules so these overrides win at equal specificity) */

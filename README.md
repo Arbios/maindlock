@@ -112,6 +112,9 @@ tests/                  engine + story-integrity tests
 ---
 
 <p align="center">
-Built for the Hugging Face × Gradio <b>Build Small</b> hackathon · Thousand Token Wood track<br>
-<a href="https://huggingface.co/spaces/build-small-hackathon/maindlock">Space</a> · demo video & social post: links at submission
+  <img src="docs/media/credits.gif" alt="built small for the Hugging Face × Gradio hackathon — OpenBMB MiniCPM, NVIDIA Nemotron, llama.cpp" width="900">
+</p>
+
+<p align="center">
+Thousand Token Wood track · <a href="https://huggingface.co/spaces/build-small-hackathon/maindlock">Space</a> · demo video & social post: links at submission
 </p>

@@ -134,6 +134,11 @@ everything it knew.
 | Runtime | llama.cpp / Ollama — fully offline |
 
 *Links: demo video · social post · GitHub repo — added at submission.*
+
+---
+
+🤗 *Built small for the **Hugging Face × Gradio** hackathon (Thousand Token Wood track).
+Minds by **OpenBMB MiniCPM** and **NVIDIA Nemotron**, running on **llama.cpp** — fully offline.*
 """
 
 about = gr.Blocks(title="Mindlock — about")
