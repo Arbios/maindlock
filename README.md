@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/build-small-hackathon/mindlock"><img src="https://img.shields.io/badge/▶_play-Hugging_Face_Space-ffcc4d?style=for-the-badge" alt="Play on HF"></a>
+  <a href="https://huggingface.co/spaces/build-small-hackathon/maindlock"><img src="https://img.shields.io/badge/▶_play-Hugging_Face_Space-ffcc4d?style=for-the-badge" alt="Play on HF"></a>
   <img src="https://img.shields.io/badge/runtime-llama.cpp-4caf50?style=for-the-badge" alt="llama.cpp">
   <img src="https://img.shields.io/badge/cloud_APIs-zero-111111?style=for-the-badge" alt="offline">
   <img src="https://img.shields.io/badge/models-%E2%89%A45.3B_total-9c7bdb?style=for-the-badge" alt="small models">
@@ -113,5 +113,5 @@ tests/                  engine + story-integrity tests
 
 <p align="center">
 Built for the Hugging Face × Gradio <b>Build Small</b> hackathon · Thousand Token Wood track<br>
-<a href="https://huggingface.co/spaces/build-small-hackathon/mindlock">Space</a> · demo video & social post: links at submission
+<a href="https://huggingface.co/spaces/build-small-hackathon/maindlock">Space</a> · demo video & social post: links at submission
 </p>
